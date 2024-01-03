@@ -2221,42 +2221,6 @@
         "index_handlers": [
           []
         ],
-        "string": "<enchanted>{0}% chance to contain an additional Enchanted Item}}"
-      },
-      {
-        "condition": [
-          {
-            "min": 100
-          }
-        ],
-        "format": [
-          "ignore"
-        ],
-        "index_handlers": [
-          []
-        ],
-        "string": "<enchanted>{0}}"
-      }
-    ],
-    "ids": [
-      "expedition_chest_%_to_drop_enchant"
-    ]
-  },
-  {
-    "English": [
-      {
-        "condition": [
-          {
-            "max": 99,
-            "min": 1
-          }
-        ],
-        "format": [
-          "ignore"
-        ],
-        "index_handlers": [
-          []
-        ],
         "string": "<enchanted>{0}% chance to contain an additional Essence}}"
       },
       {
@@ -2797,6 +2761,42 @@
         "index_handlers": [
           []
         ],
+        "string": "<enchanted>{0}% chance to contain additional Ritual Splinters}}"
+      },
+      {
+        "condition": [
+          {
+            "min": 100
+          }
+        ],
+        "format": [
+          "ignore"
+        ],
+        "index_handlers": [
+          []
+        ],
+        "string": "<enchanted>{0}}"
+      }
+    ],
+    "ids": [
+      "expedition_chest_%_to_drop_ritualsplinters"
+    ]
+  },
+  {
+    "English": [
+      {
+        "condition": [
+          {
+            "max": 99,
+            "min": 1
+          }
+        ],
+        "format": [
+          "ignore"
+        ],
+        "index_handlers": [
+          []
+        ],
         "string": "<enchanted>{0}% chance to contain an additional Scarab}}"
       },
       {
@@ -3247,7 +3247,7 @@
       }
     ],
     "ids": [
-      "monster_items_drop_corrupted_%"
+      "monster_all_dropped_items_are_corrupted_%"
     ]
   },
   {
@@ -3356,42 +3356,6 @@
     ],
     "ids": [
       "expedition_elite_%_to_drop_divination"
-    ]
-  },
-  {
-    "English": [
-      {
-        "condition": [
-          {
-            "max": 99,
-            "min": 1
-          }
-        ],
-        "format": [
-          "ignore"
-        ],
-        "index_handlers": [
-          []
-        ],
-        "string": "<enchanted>{0}% chance to drop an additional Enchanted Item}}"
-      },
-      {
-        "condition": [
-          {
-            "min": 100
-          }
-        ],
-        "format": [
-          "ignore"
-        ],
-        "index_handlers": [
-          []
-        ],
-        "string": "<enchanted>{0}}"
-      }
-    ],
-    "ids": [
-      "expedition_elite_%_to_drop_enchant"
     ]
   },
   {
@@ -3953,6 +3917,42 @@
     ],
     "ids": [
       "expedition_elite_%_to_drop_rare_weapon"
+    ]
+  },
+  {
+    "English": [
+      {
+        "condition": [
+          {
+            "max": 99,
+            "min": 1
+          }
+        ],
+        "format": [
+          "ignore"
+        ],
+        "index_handlers": [
+          []
+        ],
+        "string": "<enchanted>{0}% chance to drop additional Ritual Splinters}}"
+      },
+      {
+        "condition": [
+          {
+            "min": 100
+          }
+        ],
+        "format": [
+          "ignore"
+        ],
+        "index_handlers": [
+          []
+        ],
+        "string": "<enchanted>{0}}"
+      }
+    ],
+    "ids": [
+      "expedition_elite_%_to_drop_ritualsplinters"
     ]
   },
   {

@@ -3,10 +3,13 @@
     "name": "Abyss Jewels"
   },
   "Active Skill Gem": {
-    "name": "Active Skill Gems"
+    "name": "Skill Gems"
   },
   "Amulet": {
     "name": "Amulets"
+  },
+  "AnimalCharm": {
+    "name": "Charms"
   },
   "ArchnemesisMod": {
     "name": "Archnemesis Mods"
@@ -125,6 +128,12 @@
   "InstanceLocalItem": {
     "name": "Instance Local Items"
   },
+  "ItemisedCorpse": {
+    "name": "Corpses"
+  },
+  "ItemisedSanctum": {
+    "name": "Sanctum Research"
+  },
   "Jewel": {
     "name": "Jewels"
   },
@@ -219,10 +228,13 @@
     "name": "Staves"
   },
   "Support Skill Gem": {
-    "name": "Support Skill Gems"
+    "name": "Support Gems"
   },
   "Thrusting One Hand Sword": {
     "name": "Thrusting One Hand Swords"
+  },
+  "Tincture": {
+    "name": "Tinctures"
   },
   "Trinket": {
     "name": "Trinkets"

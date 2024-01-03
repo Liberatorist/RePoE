@@ -113,5 +113,10 @@
   "OwnerCannotUse",
   "ProjectilesNumberModifiersNotApplied",
   "TotemsAreBallistae",
-  "SkillGrantedBySupport"
+  "SkillGrantedBySupport",
+  "PreventHexTransfer",
+  "MinionsAreUndamagable",
+  "InnateTrauma",
+  "DualWieldRequiresDifferentTypes",
+  "NoVolley"
 ]
