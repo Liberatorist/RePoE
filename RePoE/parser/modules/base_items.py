@@ -154,6 +154,10 @@ ITEM_CLASS_WHITELIST = {
     "HeistEquipmentReward",
     "MemoryLine",
     "Breachstone",
+    "ItemisedSanctum",
+    "Tincture",
+    "AnimalCharm",
+    "ItemisedCorpse",
 }
 
 ITEM_CLASS_BLACKLIST = {
@@ -233,7 +237,7 @@ class base_items(Parser_Module):
                 "requirements": _convert_requirements(attribute_requirements[item_id], item["DropLevel"]),
                 "properties": properties,
                 "release_state": get_release_state(item_id).name,
-                "domain": item["ModDomainsKey"].name.lower(),
+                #"domain": item["ModDomainsKey"].name.lower(),
             }
             _convert_flask_buff(flask_types[item_id], root[item_id])
 

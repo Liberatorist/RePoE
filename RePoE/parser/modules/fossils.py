@@ -29,7 +29,7 @@ class fossils(Parser_Module):
                 "mirrors": row["CanMirrorItem"],
                 "changes_quality": row["CanImproveQuality"],
                 "rolls_lucky": row["HasLuckyRolls"],
-                "enchants": row["CanRollEnchant"],
+                #HACK, missing in generated spec "enchants": row["CanRollEnchant"],
                 "rolls_white_sockets": row["CanRollWhiteSockets"],
                 "sell_price_mods": [mod["Id"] for mod in row["SellPrice_ModsKeys"]],
                 "descriptions": [

@@ -136,13 +136,14 @@ class GemConverter:
             self.tags[tag["Id"]] = name if name != "" else None
 
         self.max_levels = {}
-        for row in self.relational_reader["ItemExperiencePerLevel.dat64"]:
-            base_item = row["BaseItemTypesKey"]["Id"]
-            level = row["ItemCurrentLevel"]
-            if base_item not in self.max_levels:
-                self.max_levels[base_item] = level
-            elif self.max_levels[base_item] < level:
-                self.max_levels[base_item] = level
+        #HACK, missing in generated spec
+        #for row in self.relational_reader["ItemExperiencePerLevel.dat64"]:
+        #    base_item = row["BaseItemTypesKey"]["Id"]
+        #    level = row["ItemCurrentLevel"]
+        #    if base_item not in self.max_levels:
+        #        self.max_levels[base_item] = level
+        #    elif self.max_levels[base_item] < level:
+        #        self.max_levels[base_item] = level
 
         self._skill_totem_life_multipliers = {}
         for row in self.relational_reader["SkillTotemVariations.dat64"]:
@@ -203,7 +204,7 @@ class GemConverter:
             r["cost_multiplier"] = gepl["CostMultiplier"]
         else:
             r["costs"] = {}
-            for cost_type, cost_amount in gepl["Costs"]:
+            for cost_type, cost_amount in zip(gepl["CostTypes"], gepl["CostAmounts"]):
                 r["costs"][cost_type["Id"]] = cost_amount
             if gesspl["DamageEffectiveness"] != 0:
                 r["damage_effectiveness"] = gesspl["DamageEffectiveness"] // 100
@@ -236,7 +237,7 @@ class GemConverter:
             if ge["Id"] in self.granted_effect_quality_stats:
                 for geq in self.granted_effect_quality_stats[ge["Id"]]:
                     for k, v in zip(geq["StatsKeys"], geq["StatsValuesPermille"]):
-                        q_stats.append({"id": k["Id"], "value": v, "set": geq["SetId"], "weight": geq["Weight"]})
+                        q_stats.append({"id": k["Id"], "value": v})
         r["quality_stats"] = q_stats
 
         if multipliers is not None:
@@ -384,18 +385,18 @@ class gems(Parser_Module):
 
         # Skills from gems
         for gem in relational_reader["SkillGems.dat64"]:
-            granted_effect = gem["GrantedEffectsKey"]
+            granted_effect = gem["GemEffects"][0]["GrantedEffect"]
             ge_id = granted_effect["Id"]
             if ge_id in gems:
                 print("Duplicate GrantedEffectsKey.Id '%s'" % ge_id)
             multipliers = {"str": gem["Str"], "dex": gem["Dex"], "int": gem["Int"]}
             gems[ge_id] = converter.convert(
-                gem["BaseItemTypesKey"], granted_effect, gem["GrantedEffectsKey2"], gem["GemTagsKeys"], multipliers
+                gem["BaseItemTypesKey"], granted_effect, gem["GemEffects"][0]["GrantedEffect2"], gem["GemEffects"][0]["GemTags"], multipliers
             )
 
         # Secondary skills from gems. This adds the support skill implicitly provided by Bane
         for gem in relational_reader["SkillGems.dat64"]:
-            granted_effect = gem["GrantedEffectsKey2"]
+            granted_effect = gem["GemEffects"][0]["GrantedEffect2"]
             if not granted_effect:
                 continue
             ge_id = granted_effect["Id"]

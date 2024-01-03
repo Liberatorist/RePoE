@@ -5,6 +5,8 @@ from PyPoE.poe.file.dat import RelationalReader
 from PyPoE.poe.file.file_system import FileSystem
 from PyPoE.poe.file.ot import OTFileCache
 from PyPoE.poe.file.translations import TranslationFileCache
+from PyPoE.poe.file.specification import load
+from PyPoE.poe.constants import VERSION
 
 from RePoE import __DATA_PATH__
 from RePoE.parser.constants import (
@@ -39,7 +41,8 @@ def create_relational_reader(file_system):
         "auto_build_index": True,
         "x64": True,
     }
-    return RelationalReader(path_or_file_system=file_system, files=["Stats.dat64"], read_options=opt)
+    specification = load(version=VERSION.GENERATED)
+    return RelationalReader(path_or_file_system=file_system, specification=specification, files=["Stats.dat64"], read_options=opt)
 
 
 def create_translation_file_cache(file_system):
