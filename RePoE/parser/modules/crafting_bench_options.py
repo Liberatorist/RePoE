@@ -1,8 +1,19 @@
 import itertools
 
-from PyPoE.poe.constants import CraftingBenchCustomActions
+from PyPoE.poe.constants import IntEnumOverride
 from RePoE.parser import Parser_Module
 from RePoE.parser.util import write_json, call_with_default_args
+
+
+class CraftingBenchCustomActions(IntEnumOverride):
+    REMOVE_CRAFTED_MODS = 0
+    REMOVE_ENCHANT_MODS = 1
+    UNKNOWN_2 = 2
+    UNKNOWN_3 = 3
+    UNKNOWN_4 = 4
+    UNKNOWN_5 = 5
+    UNKNOWN_6 = 6
+    UNKNOWN_7 = 7
 
 
 class crafting_bench_options(Parser_Module):
@@ -24,7 +35,8 @@ class crafting_bench_options(Parser_Module):
         if row["CraftingBenchCustomAction"] == CraftingBenchCustomActions.REMOVE_ENCHANT_MODS:
             actions["remove_enchantments"] = True
         if len(actions) == 0:
-            raise NotImplementedError(f"Crafting option {row['Name']} has an unknown action")
+            raise NotImplementedError(
+                f"Crafting option {row['Name']} has an unknown action")
         return actions
 
     @staticmethod
@@ -33,8 +45,10 @@ class crafting_bench_options(Parser_Module):
         for row in relational_reader["CraftingBenchOptions.dat64"]:
             if row["RequiredLevel"] > 100 or row["IsDisabled"]:
                 continue
-            item_class_row_lists = [categories["ItemClasses"] for categories in row["CraftingItemClassCategories"]]
-            item_class_rows = itertools.chain.from_iterable(item_class_row_lists)
+            item_class_row_lists = [categories["ItemClasses"]
+                                    for categories in row["CraftingItemClassCategories"]]
+            item_class_rows = itertools.chain.from_iterable(
+                item_class_row_lists)
             item_classes = [item_class["Id"] for item_class in item_class_rows]
             root.append(
                 {

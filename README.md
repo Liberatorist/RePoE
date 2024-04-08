@@ -5,31 +5,30 @@ Repository of Path of Exile resources for tool developers.
 Contains data about stats, mods, base items, gems and more. See the `data`
 folder for those files and the `docs` folder for their documentation.
 
-For the actual GGPK parsing, [PyPoE](https://github.com/OmegaK2/PyPoE) is used.
-The code here just converts PyPoE's Python objects to JSON.
+## How to set this up
 
-Developed to supply [PoESkillTree](https://github.com/PoESkillTree/PoESkillTree) with the
-game data information it requires. If you need other files converted, feel free to
-open an Issue or Pull Request for that.
+Make sure you're running python version >=3.11
 
-## Use as a Package
+```
+git clone git@github.com:Liberatorist/RePoE.git
+cd RePoE
+git clone git@github.com:Project-Path-of-Exile-Wiki/PyPoE.git
+python3 -m venv .venv
+source .venv/bin/activate
+cd PyPoe
+poetry install
+cd ..
+pip install -e .
+```
 
-- Install Python 3.7 or later (PyPoE recommends Python 3.7) and Git
-- Install [PyPoE](https://github.com/OmegaK2/PyPoE):
-  * Note: until PyPoE is updated again, RePoE only works with my fork of PyPoE (https://github.com/brather1ng/PyPoE)
-  * Clone PyPoE and go into its folder
-  * Minimal install: `pip install -e .`
-  * Full install: `pip install -e .[full]` (not required for RePoE)
-- To be able to decompress GGG's bundle files, PyPoE expects an ooz.exe or libooz.dll in its path.
-- Install RePoE
-  * Clone RePoE and go into its folder
-  * install: `pip install -e .`  
-  * install pre-commit: `pre-commit install`
+## How to run this
 
-You can now access the data using `from RePoE import mods, characters` which returns the current 
-dicts found in the files `mods.json, characters.json`
+```
+python3 RePoE/run_parser.py all -f {POE_PATH}
+```
 
-To update the data, in the `RePoE/RePoE` directory use `python run_parser.py all`.
+where {POE_PATH} is the path where the PoE ggpk file is located
+For me working in WSL this is POE_PATH="/mnt/c/Program Files (x86)/Grinding Gear Games/Path of Exile"
 
 ## Files
 
@@ -38,7 +37,7 @@ formatted and a compact version. The formatted versions complement their descrip
 in the [RePoE/docs](RePoE/docs) folder.
 
 Note that the file formats are not final, they may change at any time, e.g. when the format
-of files in the GGPK changes. 
+of files in the GGPK changes.
 
 The following data is currently available:
 
@@ -58,7 +57,7 @@ The following data is currently available:
 - `base_items.json`: Describes base item types. Contains information applicable to
   all item types, e.g. inventory size, item class and tags, as well as attribute
   requirements and properties.
-- `tags.json`: Lists all possible item tags. These are the tags used in `base_items.json` and 
+- `tags.json`: Lists all possible item tags. These are the tags used in `base_items.json` and
   `mods.json`.
 - `item_classes.json`: Defines the item class ids and the tags added to items when they are
   Shaper/Elder items.
@@ -67,19 +66,18 @@ The following data is currently available:
 - `default_monster_stats.json`: Describes the stat base values of monsters at specific levels.
 - `characters.json`: Describes the stat base values of the different player character classes.
 - `flavour.json`: Table containing the flavour text used throughout the game.
-- `fossils.json`: Describes fossils. Defines the mods they spawn, the tags they affect, and 
+- `fossils.json`: Describes fossils. Defines the mods they spawn, the tags they affect, and
   auxillary effects of the fossils.
 - `mod_types.json`: Describes the types of mods with sell price information and the tags
   relevant for fossil crafting.
-- `cluster_jewels.json`: Describes how cluster jewels can be generated and how they influence the passive tree. 
+- `cluster_jewels.json`: Describes how cluster jewels can be generated and how they influence the passive tree.
 - `cluster_jewel_notables.json`: Lists the notable and keystone passive skills that can appear on cluster jewels.
 - `cost_types.json`: Defines the resource cost types used in `gems.json`.
 - `active_skill_types.json` List the active skill types used in `gems.json`.
-  
 
 ## Credits
 
-- [Grinding Gear Games](http://www.grindinggear.com/) for 
+- [Grinding Gear Games](http://www.grindinggear.com/) for
   [Path of Exile](https://www.pathofexile.com/). The contents of all `data` files
   obviously belong to them.
 - [OmegaK2](https://github.com/OmegaK2/) for [PyPoE](https://github.com/OmegaK2/PyPoE).

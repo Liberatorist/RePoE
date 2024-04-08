@@ -542,6 +542,25 @@
           {}
         ],
         "format": [
+          "#"
+        ],
+        "index_handlers": [
+          []
+        ],
+        "string": "{0}% chance not to be consumed when sacrificed at the Blood Altar"
+      }
+    ],
+    "ids": [
+      "beast_%_chance_to_not_be_consumed"
+    ]
+  },
+  {
+    "English": [
+      {
+        "condition": [
+          {}
+        ],
+        "format": [
           "ignore"
         ],
         "index_handlers": [
