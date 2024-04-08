@@ -184,6 +184,8 @@ ITEM_CLASS_BLACKLIST = {
     "SanctumSpecialRelic",
     "GiftBox",
     "VaultKey",
+    "InstanceLocalItem",
+    "NecropolisPack"
 }
 
 

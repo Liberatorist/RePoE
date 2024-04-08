@@ -1,6 +1,6 @@
 import re
 
-from PyPoE.poe.constants import CooldownBypassTypes
+from PyPoE.poe.constants import IntEnumOverride
 from PyPoE.poe.file.stat_filters import StatFilterFile
 from PyPoE.poe.sim.formula import GemTypes, gem_stat_requirement
 from RePoE.parser.util import (
@@ -10,6 +10,13 @@ from RePoE.parser.util import (
     get_stat_translation_file_name,
 )
 from RePoE.parser import Parser_Module
+
+
+class CooldownBypassTypes(IntEnumOverride):
+    EXPEND_ENDURANCE_CHARGE = 1
+    EXPEND_FRENZY_CHARGE = 2
+    EXPEND_POWER_CHARGE = 3
+    NONE = 4
 
 
 def _handle_dict(representative, per_level):
@@ -33,7 +40,8 @@ def _handle_dict(representative, per_level):
         elif isinstance(v, list):
             static_value, cleared_value = _handle_list(v, per_level_values)
         else:
-            static_value, cleared_value = _handle_primitives(v, per_level_values)
+            static_value, cleared_value = _handle_primitives(
+                v, per_level_values)
 
         if static_value is not None:
             if static is None:
@@ -78,7 +86,8 @@ def _handle_list(representative, per_level):
         elif isinstance(v, list):
             static_value, cleared_value = _handle_list(v, per_level_values)
         else:
-            static_value, cleared_value = _handle_primitives(v, per_level_values)
+            static_value, cleared_value = _handle_primitives(
+                v, per_level_values)
 
         if static_value is not None:
             if static is None:
@@ -136,8 +145,8 @@ class GemConverter:
             self.tags[tag["Id"]] = name if name != "" else None
 
         self.max_levels = {}
-        #HACK, missing in generated spec
-        #for row in self.relational_reader["ItemExperiencePerLevel.dat64"]:
+        # HACK, missing in generated spec
+        # for row in self.relational_reader["ItemExperiencePerLevel.dat64"]:
         #    base_item = row["BaseItemTypesKey"]["Id"]
         #    level = row["ItemCurrentLevel"]
         #    if base_item not in self.max_levels:
@@ -152,13 +161,15 @@ class GemConverter:
             )
 
         self.skill_stat_filter = StatFilterFile()
-        self.skill_stat_filter.read(file_system.get_file("Metadata/StatDescriptions/skillpopup_stat_filters.txt"))
+        self.skill_stat_filter.read(file_system.get_file(
+            "Metadata/StatDescriptions/skillpopup_stat_filters.txt"))
 
     def _convert_active_skill(self, active_skill):
         stat_conversions = {}
         for in_stat, out_stat in zip(active_skill["Input_StatKeys"], active_skill["Output_StatKeys"]):
             stat_conversions[in_stat["Id"]] = out_stat["Id"]
-        is_skill_totem = active_skill["SkillTotemId"] < len(self._skill_totem_life_multipliers)
+        is_skill_totem = active_skill["SkillTotemId"] < len(
+            self._skill_totem_life_multipliers)
         r = {
             "id": active_skill["Id"],
             "display_name": active_skill["DisplayedName"],
@@ -172,7 +183,8 @@ class GemConverter:
         if is_skill_totem:
             r["skill_totem_life_multiplier"] = self._skill_totem_life_multipliers[active_skill["SkillTotemId"]]
         if active_skill["MinionActiveSkillTypes"]:
-            r["minion_types"] = self._select_active_skill_types(active_skill["MinionActiveSkillTypes"])
+            r["minion_types"] = self._select_active_skill_types(
+                active_skill["MinionActiveSkillTypes"])
         return r
 
     @classmethod
@@ -196,7 +208,8 @@ class GemConverter:
         if gepl["Cooldown"] > 0:
             r["cooldown"] = gepl["Cooldown"]
             if gepl["CooldownBypassType"] != CooldownBypassTypes.NONE:
-                r["cooldown_bypass_type"] = CooldownBypassTypes(gepl["CooldownBypassType"]).name.lower()
+                r["cooldown_bypass_type"] = CooldownBypassTypes(
+                    gepl["CooldownBypassType"]).name.lower()
         if gepl["StoredUses"] > 0:
             r["stored_uses"] = gepl["StoredUses"]
 
@@ -215,7 +228,8 @@ class GemConverter:
             if gepl["AttackSpeedMultiplier"] != 0:
                 r["attack_speed_multiplier"] = gepl["AttackSpeedMultiplier"]
             if gepl["VaalSouls"] > 0:
-                r["vaal"] = {"souls": gepl["VaalSouls"], "stored_uses": gepl["VaalStoredUses"]}
+                r["vaal"] = {"souls": gepl["VaalSouls"],
+                             "stored_uses": gepl["VaalStoredUses"]}
 
         r["reservations"] = self._convert_reservations(gepl)
 
@@ -250,10 +264,12 @@ class GemConverter:
                 elif multi == 50:
                     # 50 is from SupportTutorial ("Lesser Reduced Mana Cost Support"), for which I
                     # have no idea what the requirements are.
-                    print("Unknown multiplier (50) for " + gepl["GrantedEffect"]["Id"])
+                    print("Unknown multiplier (50) for " +
+                          gepl["GrantedEffect"]["Id"])
                     req = 0
                 else:
-                    req = gem_stat_requirement(gepl["PlayerLevelReq"], gtype, multi)
+                    req = gem_stat_requirement(
+                        gepl["PlayerLevelReq"], gtype, multi)
                 stat_requirements[stat_type] = req
             r["stat_requirements"] = stat_requirements
 
@@ -294,13 +310,17 @@ class GemConverter:
             obj["tags"] = [tag["Id"] for tag in gem_tags]
 
         if is_support:
-            obj["support_gem"] = self._convert_support_gem_specific(granted_effect)
+            obj["support_gem"] = self._convert_support_gem_specific(
+                granted_effect)
         else:
             obj["cast_time"] = granted_effect["CastTime"]
-            obj["active_skill"] = self._convert_active_skill(granted_effect["ActiveSkill"])
+            obj["active_skill"] = self._convert_active_skill(
+                granted_effect["ActiveSkill"])
 
-        game_file_name = self._get_translation_file_name(obj.get("active_skill"))
-        obj["stat_translation_file"] = get_stat_translation_file_name(game_file_name)
+        game_file_name = self._get_translation_file_name(
+            obj.get("active_skill"))
+        obj["stat_translation_file"] = get_stat_translation_file_name(
+            game_file_name)
 
         self._convert_base_item_specific(base_item_type, obj)
 
@@ -314,7 +334,8 @@ class GemConverter:
         gesspls = {row["GemLevel"]: row for row in self.gesspls[gess["Id"]]}
         gepls_dict = {}
         for gepl in gepls:
-            gepl_converted = self._convert_gepl(gepl, gess, gesspls[gepl["Level"]], multipliers, is_support)
+            gepl_converted = self._convert_gepl(
+                gepl, gess, gesspls[gepl["Level"]], multipliers, is_support)
             gepls_dict[gepl["Level"]] = gepl_converted
         obj["per_level"] = gepls_dict
 
@@ -363,14 +384,16 @@ class GemConverter:
                 for pl in values:
                     stats = pl["stats"]
                     if stats[i] is None:
-                        stats[i] = {"id": taken, "text": taken_text, "values": None}
+                        stats[i] = {"id": taken,
+                                    "text": taken_text, "values": None}
 
             i += 1
 
     def _get_translation_file_name(self, active_skill):
         if active_skill is None:
             return "gem_stat_descriptions.txt"
-        stat_filter_group = self.skill_stat_filter.skills.get(active_skill["id"])
+        stat_filter_group = self.skill_stat_filter.skills.get(
+            active_skill["id"])
         if stat_filter_group is not None:
             return stat_filter_group.translation_file_path.replace("Metadata/StatDescriptions/", "")
         else:
@@ -389,7 +412,8 @@ class gems(Parser_Module):
             ge_id = granted_effect["Id"]
             if ge_id in gems:
                 print("Duplicate GrantedEffectsKey.Id '%s'" % ge_id)
-            multipliers = {"str": gem["Str"], "dex": gem["Dex"], "int": gem["Int"]}
+            multipliers = {"str": gem["Str"],
+                           "dex": gem["Dex"], "int": gem["Int"]}
             gems[ge_id] = converter.convert(
                 gem["BaseItemTypesKey"], granted_effect, gem["GemEffects"][0]["GrantedEffect2"], gem["GemEffects"][0]["GemTags"], multipliers
             )
@@ -402,7 +426,8 @@ class gems(Parser_Module):
             ge_id = granted_effect["Id"]
             if ge_id in gems:
                 continue
-            gems[ge_id] = converter.convert(None, granted_effect, None, None, None)
+            gems[ge_id] = converter.convert(
+                None, granted_effect, None, None, None)
 
         # Skills from mods
         for mod in relational_reader["Mods.dat64"]:
@@ -414,14 +439,16 @@ class gems(Parser_Module):
                 if ge_id in gems:
                     # mod effects may exist as gems, those are handled above
                     continue
-                gems[ge_id] = converter.convert(None, granted_effect, None, None, None)
+                gems[ge_id] = converter.convert(
+                    None, granted_effect, None, None, None)
 
         # Default Attack/PlayerMelee is neither gem nor mod effect
         for granted_effect in relational_reader["GrantedEffects.dat64"]:
             ge_id = granted_effect["Id"]
             if ge_id != "PlayerMelee":
                 continue
-            gems[ge_id] = converter.convert(None, granted_effect, None, None, None)
+            gems[ge_id] = converter.convert(
+                None, granted_effect, None, None, None)
 
         write_json(gems, data_path, "gems")
 

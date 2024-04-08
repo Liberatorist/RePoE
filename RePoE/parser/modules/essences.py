@@ -29,6 +29,12 @@ def _convert_mods(row):
     }
     return {item_class: row[key]["Id"] for item_class, key in class_to_key.items() if row[key] is not None}
 
+# kind of a hack, but I cant seem to find where the max level is stored now
+def get_essence_min_drop_level(row):
+    if not row["DropLevel"]:
+        return 0
+    return row["DropLevel"][0]
+
 
 class essences(Parser_Module):
     @staticmethod
@@ -36,8 +42,8 @@ class essences(Parser_Module):
         essences = {
             row["BaseItemTypesKey"]["Id"]: {
                 "name": row["BaseItemTypesKey"]["Name"],
-                "spawn_level_min": row["DropLevelMinimum"],
-                "spawn_level_max": row["DropLevelMaximum"],
+                "spawn_level_min": get_essence_min_drop_level(row),
+                "spawn_level_max": 0,
                 "level": row["Level"],
                 "item_level_restriction": row["ItemLevelRestriction"] if row["ItemLevelRestriction"] > 0 else None,
                 "type": {

@@ -4,7 +4,7 @@
     "level": 0,
     "mods": {},
     "name": "Remnant of Corruption",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 32,
     "type": {
       "is_corruption_only": false,
@@ -39,7 +39,7 @@
       "Wand": "LocalAddedFireDamage2"
     },
     "name": "Muttering Essence of Anger",
-    "spawn_level_max": 67,
+    "spawn_level_max": 0,
     "spawn_level_min": 12,
     "type": {
       "is_corruption_only": false,
@@ -74,7 +74,7 @@
       "Wand": "LocalAddedFireDamage4"
     },
     "name": "Weeping Essence of Anger",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 30,
     "type": {
       "is_corruption_only": false,
@@ -109,7 +109,7 @@
       "Wand": "LocalAddedFireDamage6"
     },
     "name": "Wailing Essence of Anger",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 48,
     "type": {
       "is_corruption_only": false,
@@ -144,7 +144,7 @@
       "Wand": "LocalAddedFireDamage8"
     },
     "name": "Screaming Essence of Anger",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 68,
     "type": {
       "is_corruption_only": false,
@@ -180,7 +180,7 @@
     },
     "name": "Shrieking Essence of Anger",
     "spawn_level_max": 0,
-    "spawn_level_min": 0,
+    "spawn_level_min": 73,
     "type": {
       "is_corruption_only": false,
       "tier": 2
@@ -249,7 +249,7 @@
       "Wand": "SpellAddedFireDamage6"
     },
     "name": "Wailing Essence of Anguish",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 48,
     "type": {
       "is_corruption_only": false,
@@ -284,7 +284,7 @@
       "Wand": "SpellAddedFireDamage7"
     },
     "name": "Screaming Essence of Anguish",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 68,
     "type": {
       "is_corruption_only": false,
@@ -320,7 +320,7 @@
     },
     "name": "Shrieking Essence of Anguish",
     "spawn_level_max": 0,
-    "spawn_level_min": 0,
+    "spawn_level_min": 73,
     "type": {
       "is_corruption_only": false,
       "tier": 4
@@ -389,7 +389,7 @@
       "Wand": "LocalAddedPhysicalDamage1"
     },
     "name": "Whispering Essence of Contempt",
-    "spawn_level_max": 47,
+    "spawn_level_max": 0,
     "spawn_level_min": 1,
     "type": {
       "is_corruption_only": false,
@@ -424,7 +424,7 @@
       "Wand": "LocalAddedPhysicalDamage2"
     },
     "name": "Muttering Essence of Contempt",
-    "spawn_level_max": 67,
+    "spawn_level_max": 0,
     "spawn_level_min": 12,
     "type": {
       "is_corruption_only": false,
@@ -459,7 +459,7 @@
       "Wand": "LocalAddedPhysicalDamage3"
     },
     "name": "Weeping Essence of Contempt",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 30,
     "type": {
       "is_corruption_only": false,
@@ -494,7 +494,7 @@
       "Wand": "LocalAddedPhysicalDamage4"
     },
     "name": "Wailing Essence of Contempt",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 48,
     "type": {
       "is_corruption_only": false,
@@ -529,7 +529,7 @@
       "Wand": "LocalAddedPhysicalDamage6"
     },
     "name": "Screaming Essence of Contempt",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 68,
     "type": {
       "is_corruption_only": false,
@@ -565,7 +565,7 @@
     },
     "name": "Shrieking Essence of Contempt",
     "spawn_level_max": 0,
-    "spawn_level_min": 0,
+    "spawn_level_min": 73,
     "type": {
       "is_corruption_only": false,
       "tier": 1
@@ -669,7 +669,7 @@
       "Wand": "LocalIncreasedAccuracyNew2"
     },
     "name": "Weeping Essence of Doubt",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 30,
     "type": {
       "is_corruption_only": false,
@@ -704,7 +704,7 @@
       "Wand": "LocalIncreasedAccuracyNew3"
     },
     "name": "Wailing Essence of Doubt",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 48,
     "type": {
       "is_corruption_only": false,
@@ -739,7 +739,7 @@
       "Wand": "LocalIncreasedAccuracyNew4"
     },
     "name": "Screaming Essence of Doubt",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 68,
     "type": {
       "is_corruption_only": false,
@@ -775,7 +775,7 @@
     },
     "name": "Shrieking Essence of Doubt",
     "spawn_level_max": 0,
-    "spawn_level_min": 0,
+    "spawn_level_min": 73,
     "type": {
       "is_corruption_only": false,
       "tier": 3
@@ -844,7 +844,7 @@
       "Wand": "ProjectileSpeed4"
     },
     "name": "Screaming Essence of Dread",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 68,
     "type": {
       "is_corruption_only": false,
@@ -880,7 +880,7 @@
     },
     "name": "Shrieking Essence of Dread",
     "spawn_level_max": 0,
-    "spawn_level_min": 0,
+    "spawn_level_min": 73,
     "type": {
       "is_corruption_only": false,
       "tier": 5
@@ -949,7 +949,7 @@
       "Wand": "LocalAddedChaosDamageEssence1_"
     },
     "name": "Screaming Essence of Envy",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 68,
     "type": {
       "is_corruption_only": false,
@@ -985,7 +985,7 @@
     },
     "name": "Shrieking Essence of Envy",
     "spawn_level_max": 0,
-    "spawn_level_min": 0,
+    "spawn_level_min": 73,
     "type": {
       "is_corruption_only": false,
       "tier": 5
@@ -1054,7 +1054,7 @@
       "Wand": "MinionDamageOnWeapon2"
     },
     "name": "Muttering Essence of Fear",
-    "spawn_level_max": 67,
+    "spawn_level_max": 0,
     "spawn_level_min": 12,
     "type": {
       "is_corruption_only": false,
@@ -1089,7 +1089,7 @@
       "Wand": "MinionDamageOnWeapon3"
     },
     "name": "Weeping Essence of Fear",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 30,
     "type": {
       "is_corruption_only": false,
@@ -1124,7 +1124,7 @@
       "Wand": "MinionDamageOnWeapon4_"
     },
     "name": "Wailing Essence of Fear",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 48,
     "type": {
       "is_corruption_only": false,
@@ -1159,7 +1159,7 @@
       "Wand": "MinionDamageOnWeaponEssence5"
     },
     "name": "Screaming Essence of Fear",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 68,
     "type": {
       "is_corruption_only": false,
@@ -1195,7 +1195,7 @@
     },
     "name": "Shrieking Essence of Fear",
     "spawn_level_max": 0,
-    "spawn_level_min": 0,
+    "spawn_level_min": 73,
     "type": {
       "is_corruption_only": false,
       "tier": 2
@@ -1264,7 +1264,7 @@
       "Wand": "LifeLeechPermyriadLocalEssence1"
     },
     "name": "Whispering Essence of Greed",
-    "spawn_level_max": 47,
+    "spawn_level_max": 0,
     "spawn_level_min": 1,
     "type": {
       "is_corruption_only": false,
@@ -1299,7 +1299,7 @@
       "Wand": "LifeLeechPermyriadLocalEssence2"
     },
     "name": "Muttering Essence of Greed",
-    "spawn_level_max": 67,
+    "spawn_level_max": 0,
     "spawn_level_min": 12,
     "type": {
       "is_corruption_only": false,
@@ -1334,7 +1334,7 @@
       "Wand": "LifeLeechPermyriadLocalEssence3"
     },
     "name": "Weeping Essence of Greed",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 30,
     "type": {
       "is_corruption_only": false,
@@ -1369,7 +1369,7 @@
       "Wand": "LifeLeechPermyriadLocalEssence4"
     },
     "name": "Wailing Essence of Greed",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 48,
     "type": {
       "is_corruption_only": false,
@@ -1404,7 +1404,7 @@
       "Wand": "LifeLeechPermyriadLocalEssence5"
     },
     "name": "Screaming Essence of Greed",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 68,
     "type": {
       "is_corruption_only": false,
@@ -1440,7 +1440,7 @@
     },
     "name": "Shrieking Essence of Greed",
     "spawn_level_max": 0,
-    "spawn_level_min": 0,
+    "spawn_level_min": 73,
     "type": {
       "is_corruption_only": false,
       "tier": 1
@@ -1509,7 +1509,7 @@
       "Wand": "LocalAddedColdDamage1"
     },
     "name": "Whispering Essence of Hatred",
-    "spawn_level_max": 47,
+    "spawn_level_max": 0,
     "spawn_level_min": 1,
     "type": {
       "is_corruption_only": false,
@@ -1544,7 +1544,7 @@
       "Wand": "LocalAddedColdDamage2"
     },
     "name": "Muttering Essence of Hatred",
-    "spawn_level_max": 67,
+    "spawn_level_max": 0,
     "spawn_level_min": 12,
     "type": {
       "is_corruption_only": false,
@@ -1579,7 +1579,7 @@
       "Wand": "LocalAddedColdDamage4"
     },
     "name": "Weeping Essence of Hatred",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 30,
     "type": {
       "is_corruption_only": false,
@@ -1614,7 +1614,7 @@
       "Wand": "LocalAddedColdDamage6"
     },
     "name": "Wailing Essence of Hatred",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 48,
     "type": {
       "is_corruption_only": false,
@@ -1649,7 +1649,7 @@
       "Wand": "LocalAddedColdDamage8"
     },
     "name": "Screaming Essence of Hatred",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 68,
     "type": {
       "is_corruption_only": false,
@@ -1685,7 +1685,7 @@
     },
     "name": "Shrieking Essence of Hatred",
     "spawn_level_max": 0,
-    "spawn_level_min": 0,
+    "spawn_level_min": 73,
     "type": {
       "is_corruption_only": false,
       "tier": 1
@@ -1859,7 +1859,7 @@
       "Wand": "LocalCriticalStrikeChance3"
     },
     "name": "Wailing Essence of Loathing",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 48,
     "type": {
       "is_corruption_only": false,
@@ -1894,7 +1894,7 @@
       "Wand": "LocalCriticalStrikeChance4"
     },
     "name": "Screaming Essence of Loathing",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 68,
     "type": {
       "is_corruption_only": false,
@@ -1930,7 +1930,7 @@
     },
     "name": "Shrieking Essence of Loathing",
     "spawn_level_max": 0,
-    "spawn_level_min": 0,
+    "spawn_level_min": 73,
     "type": {
       "is_corruption_only": false,
       "tier": 4
@@ -1999,7 +1999,7 @@
       "Wand": "IncreasedCastSpeed5"
     },
     "name": "Screaming Essence of Misery",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 68,
     "type": {
       "is_corruption_only": false,
@@ -2035,7 +2035,7 @@
     },
     "name": "Shrieking Essence of Misery",
     "spawn_level_max": 0,
-    "spawn_level_min": 0,
+    "spawn_level_min": 73,
     "type": {
       "is_corruption_only": false,
       "tier": 5
@@ -2104,7 +2104,7 @@
       "Wand": "FireResistancePenetrationEssence1"
     },
     "name": "Weeping Essence of Rage",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 30,
     "type": {
       "is_corruption_only": false,
@@ -2139,7 +2139,7 @@
       "Wand": "FireResistancePenetrationEssence2"
     },
     "name": "Wailing Essence of Rage",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 48,
     "type": {
       "is_corruption_only": false,
@@ -2174,7 +2174,7 @@
       "Wand": "FireResistancePenetrationEssence3"
     },
     "name": "Screaming Essence of Rage",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 68,
     "type": {
       "is_corruption_only": false,
@@ -2210,7 +2210,7 @@
     },
     "name": "Shrieking Essence of Rage",
     "spawn_level_max": 0,
-    "spawn_level_min": 0,
+    "spawn_level_min": 73,
     "type": {
       "is_corruption_only": false,
       "tier": 3
@@ -2279,7 +2279,7 @@
       "Wand": "SpellCriticalStrikeChance5"
     },
     "name": "Screaming Essence of Scorn",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 68,
     "type": {
       "is_corruption_only": false,
@@ -2315,7 +2315,7 @@
     },
     "name": "Shrieking Essence of Scorn",
     "spawn_level_max": 0,
-    "spawn_level_min": 0,
+    "spawn_level_min": 73,
     "type": {
       "is_corruption_only": false,
       "tier": 5
@@ -2384,7 +2384,7 @@
       "Wand": "ColdResistancePenetrationEssence1"
     },
     "name": "Muttering Essence of Sorrow",
-    "spawn_level_max": 67,
+    "spawn_level_max": 0,
     "spawn_level_min": 12,
     "type": {
       "is_corruption_only": false,
@@ -2419,7 +2419,7 @@
       "Wand": "ColdResistancePenetrationEssence2"
     },
     "name": "Weeping Essence of Sorrow",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 30,
     "type": {
       "is_corruption_only": false,
@@ -2454,7 +2454,7 @@
       "Wand": "ColdResistancePenetrationEssence3"
     },
     "name": "Wailing Essence of Sorrow",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 48,
     "type": {
       "is_corruption_only": false,
@@ -2489,7 +2489,7 @@
       "Wand": "ColdResistancePenetrationEssence4_"
     },
     "name": "Screaming Essence of Sorrow",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 68,
     "type": {
       "is_corruption_only": false,
@@ -2525,7 +2525,7 @@
     },
     "name": "Shrieking Essence of Sorrow",
     "spawn_level_max": 0,
-    "spawn_level_min": 0,
+    "spawn_level_min": 73,
     "type": {
       "is_corruption_only": false,
       "tier": 2
@@ -2594,7 +2594,7 @@
       "Wand": "LightningResistancePenetrationEssence1_"
     },
     "name": "Wailing Essence of Spite",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 48,
     "type": {
       "is_corruption_only": false,
@@ -2629,7 +2629,7 @@
       "Wand": "LightningResistancePenetrationEssence2"
     },
     "name": "Screaming Essence of Spite",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 68,
     "type": {
       "is_corruption_only": false,
@@ -2665,7 +2665,7 @@
     },
     "name": "Shrieking Essence of Spite",
     "spawn_level_max": 0,
-    "spawn_level_min": 0,
+    "spawn_level_min": 73,
     "type": {
       "is_corruption_only": false,
       "tier": 4
@@ -2734,7 +2734,7 @@
       "Wand": "SpellAddedColdDamage4"
     },
     "name": "Weeping Essence of Suffering",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 30,
     "type": {
       "is_corruption_only": false,
@@ -2769,7 +2769,7 @@
       "Wand": "SpellAddedColdDamage6_"
     },
     "name": "Wailing Essence of Suffering",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 48,
     "type": {
       "is_corruption_only": false,
@@ -2804,7 +2804,7 @@
       "Wand": "SpellAddedColdDamage7"
     },
     "name": "Screaming Essence of Suffering",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 68,
     "type": {
       "is_corruption_only": false,
@@ -2840,7 +2840,7 @@
     },
     "name": "Shrieking Essence of Suffering",
     "spawn_level_max": 0,
-    "spawn_level_min": 0,
+    "spawn_level_min": 73,
     "type": {
       "is_corruption_only": false,
       "tier": 3
@@ -2909,7 +2909,7 @@
       "Wand": "SpellAddedLightningDamage2"
     },
     "name": "Muttering Essence of Torment",
-    "spawn_level_max": 67,
+    "spawn_level_max": 0,
     "spawn_level_min": 12,
     "type": {
       "is_corruption_only": false,
@@ -2944,7 +2944,7 @@
       "Wand": "SpellAddedLightningDamage4"
     },
     "name": "Weeping Essence of Torment",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 30,
     "type": {
       "is_corruption_only": false,
@@ -2979,7 +2979,7 @@
       "Wand": "SpellAddedLightningDamage6"
     },
     "name": "Wailing Essence of Torment",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 48,
     "type": {
       "is_corruption_only": false,
@@ -3014,7 +3014,7 @@
       "Wand": "SpellAddedLightningDamage7"
     },
     "name": "Screaming Essence of Torment",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 68,
     "type": {
       "is_corruption_only": false,
@@ -3050,7 +3050,7 @@
     },
     "name": "Shrieking Essence of Torment",
     "spawn_level_max": 0,
-    "spawn_level_min": 0,
+    "spawn_level_min": 73,
     "type": {
       "is_corruption_only": false,
       "tier": 2
@@ -3119,7 +3119,7 @@
       "Wand": "SpellDamageOnWeapon1"
     },
     "name": "Whispering Essence of Woe",
-    "spawn_level_max": 47,
+    "spawn_level_max": 0,
     "spawn_level_min": 1,
     "type": {
       "is_corruption_only": false,
@@ -3154,7 +3154,7 @@
       "Wand": "SpellDamageOnWeapon2"
     },
     "name": "Muttering Essence of Woe",
-    "spawn_level_max": 67,
+    "spawn_level_max": 0,
     "spawn_level_min": 12,
     "type": {
       "is_corruption_only": false,
@@ -3189,7 +3189,7 @@
       "Wand": "SpellDamageOnWeapon3"
     },
     "name": "Weeping Essence of Woe",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 30,
     "type": {
       "is_corruption_only": false,
@@ -3224,7 +3224,7 @@
       "Wand": "SpellDamageOnWeapon4"
     },
     "name": "Wailing Essence of Woe",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 48,
     "type": {
       "is_corruption_only": false,
@@ -3259,7 +3259,7 @@
       "Wand": "SpellDamageOnWeaponEssence5_"
     },
     "name": "Screaming Essence of Woe",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 68,
     "type": {
       "is_corruption_only": false,
@@ -3295,7 +3295,7 @@
     },
     "name": "Shrieking Essence of Woe",
     "spawn_level_max": 0,
-    "spawn_level_min": 0,
+    "spawn_level_min": 73,
     "type": {
       "is_corruption_only": false,
       "tier": 1
@@ -3364,7 +3364,7 @@
       "Wand": "LocalAddedLightningDamage4"
     },
     "name": "Weeping Essence of Wrath",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 30,
     "type": {
       "is_corruption_only": false,
@@ -3399,7 +3399,7 @@
       "Wand": "LocalAddedLightningDamage6"
     },
     "name": "Wailing Essence of Wrath",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 48,
     "type": {
       "is_corruption_only": false,
@@ -3434,7 +3434,7 @@
       "Wand": "LocalAddedLightningDamage8"
     },
     "name": "Screaming Essence of Wrath",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 68,
     "type": {
       "is_corruption_only": false,
@@ -3470,7 +3470,7 @@
     },
     "name": "Shrieking Essence of Wrath",
     "spawn_level_max": 0,
-    "spawn_level_min": 0,
+    "spawn_level_min": 73,
     "type": {
       "is_corruption_only": false,
       "tier": 3
@@ -3539,7 +3539,7 @@
       "Wand": "LocalIncreasedAttackSpeedEssenceRanged4_"
     },
     "name": "Wailing Essence of Zeal",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 48,
     "type": {
       "is_corruption_only": false,
@@ -3574,7 +3574,7 @@
       "Wand": "LocalIncreasedAttackSpeedEssenceRanged5"
     },
     "name": "Screaming Essence of Zeal",
-    "spawn_level_max": 100,
+    "spawn_level_max": 0,
     "spawn_level_min": 68,
     "type": {
       "is_corruption_only": false,
@@ -3610,7 +3610,7 @@
     },
     "name": "Shrieking Essence of Zeal",
     "spawn_level_max": 0,
-    "spawn_level_min": 0,
+    "spawn_level_min": 73,
     "type": {
       "is_corruption_only": false,
       "tier": 4
