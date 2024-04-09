@@ -81,3 +81,6 @@ The following data is currently available:
   [Path of Exile](https://www.pathofexile.com/). The contents of all `data` files
   obviously belong to them.
 - [OmegaK2](https://github.com/OmegaK2/) for [PyPoE](https://github.com/OmegaK2/PyPoE).
+- [brather1ng](https://github.com/brather1ng) for the original [RePoE](https://github.com/brather1ng/RePoE) and their [PyPoE Fork](https://github.com/brather1ng/PyPoE)
+- Everyone at the [PoE Wiki Fork of PyPoE](https://github.com/Project-Path-of-Exile-Wiki/PyPoE) which is used in thi project
+- [ltogniolli](https://github.com/ltogniolli) for the [RePoE Fork](https://github.com/ltogniolli/RePoE) this is based on
