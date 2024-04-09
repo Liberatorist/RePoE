@@ -1,21 +1,32 @@
+import os
 from setuptools import find_packages, setup
+import sys
 
 # Package meta-data.
-NAME = "RePoE"
+NAME = "RePoE-Liberatorist"
 DESCRIPTION = "Repository of Path of Exile resources for tool developers"
-URL = "https://github.com/brather1ng/RePoE"
+URL = "https://github.com/Liberatorist/RePoE"
 EMAIL = ""
-AUTHOR = "brather1ng"
-REQUIRES_PYTHON = ">=3.6.0"
-VERSION = "1.0.0"
+AUTHOR = "Liberatorist"
+REQUIRES_PYTHON = ">=3.11.0"
+VERSION = "3.24.0"
 
 # What packages are required for this module to be executed?
-REQUIRED = ["PyPoE", "pre-commit"]
+REQUIRED = []
 
 # What packages are optional?
 EXTRAS = {
     # 'fancy feature': ['django'],
 }
+# traverse RePoE/data and add all files to data_files
+data_files = []
+
+for file in os.listdir("RePoE/data"):
+    # not packing all stat translations for now
+    if file.endswith(".min.json"):
+        data_files.append(os.path.join("RePoE/data", file))
+
+directory = "/".join(sys.prefix.split("/")[:-2]) + "/RePoE/data"
 
 setup(
     name=NAME,
@@ -25,9 +36,13 @@ setup(
     author_email=EMAIL,
     python_requires=REQUIRES_PYTHON,
     url=URL,
-    py_modules=find_packages(),
+    py_modules=["RePoE.types"],
     install_requires=REQUIRED,
     extras_require=EXTRAS,
-    include_package_data=True,
     license="proprietary",
+
+    data_files=[
+        (directory, data_files),
+    ]
+
 )

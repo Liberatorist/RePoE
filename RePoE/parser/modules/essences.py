@@ -6,31 +6,32 @@ def _convert_mods(row):
     class_to_key = {
         "Amulet": "Amulet_ModsKey",
         "Belt": "Belt_ModsKey",
-        "Body Armour": "BodyArmour_ModsKey",
+        "BodyArmour": "BodyArmour_ModsKey",
         "Boots": "Boots_ModsKey",
         "Bow": "Bow_ModsKey",
         "Claw": "Claw_ModsKey",
         "Dagger": "Dagger_ModsKey",
         "Gloves": "Gloves_ModsKey",
         "Helmet": "Helmet_ModsKey",
-        "One Hand Axe": "OneHandAxe_ModsKey",
-        "One Hand Mace": "OneHandMace_ModsKey",
-        "One Hand Sword": "OneHandSword_ModsKey",
+        "OneHandAxe": "OneHandAxe_ModsKey",
+        "OneHandMace": "OneHandMace_ModsKey",
+        "OneHandSword": "OneHandSword_ModsKey",
         "Quiver": "Display_Quiver_ModsKey",
         "Ring": "Ring_ModsKey",
         "Sceptre": "Sceptre_ModsKey",
         "Shield": "Shield_ModsKey",
         "Staff": "Staff_ModsKey",
-        "Thrusting One Hand Sword": "OneHandThrustingSword_ModsKey",
-        "Two Hand Axe": "TwoHandAxe_ModsKey",
-        "Two Hand Mace": "TwoHandMace_ModsKey",
-        "Two Hand Sword": "TwoHandSword_ModsKey",
+        "ThrustingOneHandSword": "OneHandThrustingSword_ModsKey",
+        "TwoHandAxe": "TwoHandAxe_ModsKey",
+        "TwoHandMace": "TwoHandMace_ModsKey",
+        "TwoHandSword": "TwoHandSword_ModsKey",
         "Wand": "Wand_ModsKey",
     }
     return {item_class: row[key]["Id"] for item_class, key in class_to_key.items() if row[key] is not None}
 
-# kind of a hack, but I cant seem to find where the max level is stored now
+
 def get_essence_min_drop_level(row):
+    # kind of a hack, but I cant seem to find where the max level is stored now
     if not row["DropLevel"]:
         return 0
     return row["DropLevel"][0]
