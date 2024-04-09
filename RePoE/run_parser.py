@@ -16,6 +16,7 @@ from RePoE.parser.util import (
     create_ot_file_cache,
     load_file_system,
 )
+from RePoE.wiki import fetch_wiki_data
 
 
 def main():
@@ -74,7 +75,6 @@ def fetch_trees():
         f.write(json.dumps(json_string, separators=(",", ":"), sort_keys=True))
 
     atlas_tree_url = "https://raw.githubusercontent.com/grindinggear/atlastree-export/master/data.json"
-    print(os.path.join(__DATA_PATH__, "atlas_tree.min.json"))
     with open(os.path.join(__DATA_PATH__, "atlas_tree.min.json"), "w") as f:
         json_string = requests.get(atlas_tree_url).json()
         f.write(json.dumps(json_string, separators=(",", ":"), sort_keys=True))
@@ -83,3 +83,4 @@ def fetch_trees():
 if __name__ == "__main__":
     main()
     fetch_trees()
+    fetch_wiki_data()

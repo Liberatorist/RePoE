@@ -32,7 +32,7 @@ class BaseItem(TypedDict):
     implicits: list[str]
     tags: list[str]
     visual_identity: VisualIdentity
-    properties: Dict[str, Union[int, str, BaseItemProperty]]
+    properties: Dict[str, dict]
     release_state: str
     requirements: NotRequired[Requirements]
     grants_buff: NotRequired[FlaskBuff]
@@ -457,3 +457,17 @@ class AtlasTree(TypedDict):
     sprites: dict
     tree: Literal["Atlas"]
 
+class UniqueItem(TypedDict):
+    name: str
+    class_id: str
+    base_item: str
+    is_drop_restricted: bool
+    drop_enabled: bool
+    drop_monsters: List[str]
+    explicit_stat_text: List[str]
+
+class Area(TypedDict):
+    name: str
+    area_levels: List[int]
+    boss_monster_ids: List[str]
+    tags: List[str]
