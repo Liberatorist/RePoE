@@ -9,7 +9,7 @@ URL = "https://github.com/Liberatorist/RePoE"
 EMAIL = ""
 AUTHOR = "Liberatorist"
 REQUIRES_PYTHON = ">=3.11.0"
-VERSION = "3.24.0"
+VERSION = "3.24.1"
 
 # What packages are required for this module to be executed?
 REQUIRED = []
@@ -36,7 +36,7 @@ setup(
     author_email=EMAIL,
     python_requires=REQUIRES_PYTHON,
     url=URL,
-    py_modules=["RePoE.types"],
+    py_modules=["RePoE.poe_types"],
     install_requires=REQUIRED,
     extras_require=EXTRAS,
     license="proprietary",

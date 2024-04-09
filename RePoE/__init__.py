@@ -2,7 +2,7 @@ import json
 import os
 from typing import Dict, List, Optional
 
-from RePoE.types import *
+from RePoE.poe_types import *
 # directory that this __init__ file lives in
 __REPOE_DIR__, _ = os.path.split(__file__)
 
@@ -43,3 +43,5 @@ cluster_jewels: Dict[str, ClusterJewel] = load_json("cluster_jewels.min.json")
 cluster_jewel_notables: List[ClusterJewelNotable] = load_json(
     "cluster_jewel_notables.min.json")
 cost_types: Dict[str, CostType] = load_json("cost_types.min.json")
+skill_tree: SkillTree = load_json("skill_tree.min.json")
+atlas_tree: AtlasTree = load_json("atlas_tree.min.json")

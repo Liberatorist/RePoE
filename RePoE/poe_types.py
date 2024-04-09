@@ -1,10 +1,4 @@
-from enum import Enum
 from typing import Dict, List, Literal, NotRequired, TypedDict, Union
-
-
-class Format(Enum):
-    DICT = 0
-    LIST = 1
 
 
 class Requirements(TypedDict):
@@ -314,6 +308,12 @@ class ClusterJewelNotable(TypedDict):
     jewel_stat: str
     name: str
 
+class Rect(TypedDict):
+    height: int
+    width: int
+    x: int
+    y: int
+
 
 class ClusterJewelPassiveSkill(TypedDict):
     id: str
@@ -337,3 +337,123 @@ class ClusterJewel(TypedDict):
 class CostType(TypedDict):
     format_text: str
     stat: str
+
+
+class Ascendancy(TypedDict):
+    flavourText: str
+    flavourTextColour: str
+    flavourTextRect: Rect
+    id: str
+    name: str
+
+class PoEClass(TypedDict):
+    ascendancies: List[Ascendancy]
+    base_dex: int
+    base_int: int
+    base_str: int
+    name: str
+
+class SkillTreeConstants(TypedDict):
+    PSSCentreInnerRadius: int
+    characterAttributes: Dict[str, int]
+    classes: Dict[str, int]
+    orbitRadii: List[int]
+    skillsPerOrbit: List[int]
+
+class SkillTreeExtraImage(TypedDict):
+        image: str
+        x: float
+        y: float
+class SkillTreeBackground(TypedDict):
+    image: str
+    isHalfImage: bool
+
+class SkillTreeGroup(TypedDict):
+    background: SkillTreeBackground
+    nodes: List[str]
+    orbits: List[int]
+    x: float
+    y: float
+
+class MasteryEffect(TypedDict):
+    effect: int
+    stats: List[str]    
+    reminderText: NotRequired[List[str]]
+
+class SkillTreeNode(TypedDict):
+    group: int
+    icon: str
+    in_: List[str]
+    out: List[str]
+    name: str
+    orbit: int
+    orbitIndex: int
+    out: List[str]
+    reminderText: List[str]
+    skill: int
+    stats: List[str]
+    activeIcon: NotRequired[str]
+    activeEffectImage: NotRequired[str]
+    inactiveIcon: NotRequired[str]
+    recipe: NotRequired[List[str]]
+    isNotable: NotRequired[bool]
+    isBlighted: NotRequired[bool]
+    isKeystone: NotRequired[bool]
+    isJewelSocket: NotRequired[bool]
+    isProxy: NotRequired[bool]
+    isMastery: NotRequired[bool]
+    isAscendancyStart: NotRequired[bool]
+    masteryEffects: NotRequired[List[MasteryEffect]]
+    grantedPassivePoints: NotRequired[int]
+    grantedIntelligence: NotRequired[int]
+    grantedDexterity: NotRequired[int]
+    grantedStrength: NotRequired[int]
+    classStartIndex: NotRequired[int]
+    ascendancyName: NotRequired[str]
+    ascendancyClassName: NotRequired[str]
+    ascendancyClass: NotRequired[str]
+    isMultipleChoice: NotRequired[bool]
+    isMultipleChoiceOption: NotRequired[bool]
+    expansionJewel: NotRequired[bool]
+    grantedSkills: NotRequired[List[str]]
+    grantedNotable: NotRequired[str]
+    isJewelSocketActive: NotRequired[bool]
+    activeIcon: NotRequired[str]
+
+
+class SkillTreePoints(TypedDict):
+    ascendancyPoints: int
+    totalPoints: int
+
+
+class SkillTree(TypedDict):
+    alternate_ascendancies: List[Ascendancy]
+    classes: List[PoEClass]
+    constants: SkillTreeConstants
+    extra_images: Dict[str, SkillTreeExtraImage]
+    groups: Dict[str, SkillTreeGroup]
+    imageZoomLevels: List[float]
+    jewelSlots: List[int]
+    max_x: int
+    max_y: int
+    min_x: int
+    min_y: int
+    nodes: Dict[str, SkillTreeNode]
+    points: SkillTreePoints
+    sprites: dict
+    tree: Literal["default"]
+
+
+class AtlasTree(TypedDict):
+    constants: SkillTreeConstants
+    groups: Dict[str, SkillTreeGroup]
+    imageZoomLevels: List[float]
+    max_x: int
+    max_y: int
+    min_x: int
+    min_y: int
+    nodes: Dict[str, SkillTreeNode]
+    points: SkillTreePoints
+    sprites: dict
+    tree: Literal["Atlas"]
+
