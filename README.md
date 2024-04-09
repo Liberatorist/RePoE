@@ -30,6 +30,17 @@ python3 RePoE/run_parser.py all -f {POE_PATH}
 where {POE_PATH} is the path where the PoE ggpk file is located
 For me working in WSL this is POE_PATH="/mnt/c/Program Files (x86)/Grinding Gear Games/Path of Exile"
 
+## How upload this to pypi
+
+After running the parser, change the version in setup.py and run
+
+```
+python3 -m build
+python3 -m twine upload dist/*
+```
+
+and enter pypi api-key when prompted
+
 ## Files
 
 The [RePoE/data](RePoE/data) folder contains the generated data in Json format. Each file has a
