@@ -4,91 +4,120 @@ import requests
 import os
 from RePoE import __DATA_PATH__
 
-base_url = "https://www.poewiki.net/w/api.php?action=cargoquery"
 
 def save_file(file_name, data):
-    with open(os.path.join(__DATA_PATH__, file_name), "w") as f:
+    with open(os.path.join(__DATA_PATH__, file_name + ".min.json"), "w") as f:
         f.write(json.dumps(data, separators=(",", ":"), sort_keys=True))
+    with open(os.path.join(__DATA_PATH__, file_name + ".json"), "w") as f:
+        f.write(json.dumps(data, indent=2, sort_keys=True))
+
+def request_data_from_wiki(tables: list[str], fields: list[str], where: str="", join_on: str="", limit: int=500, offset: int = 0):
+    url = "https://www.poewiki.net/w/api.php?action=cargoquery"
+    url += f"&tables={','.join(tables)}"
+    url += f"&fields={','.join(fields)}"
+    if where:
+        url += f"&where={where}"
+    if join_on:
+        url += f"&join_on={join_on}"
+    url += f"&limit={limit}"
+    url += f"&offset={offset}"
+    url += "&format=json"
+    response = requests.get(url)
+    return [map_item(item["title"]) for item in response.json()["cargoquery"]]
+
+
 
 def fix_explicit_stat_text(explicit_stat_text) -> List[List[str]]:
     # this will most likely break whenever the formatting in the wiki changes
     if not explicit_stat_text:
         return [[]]   
-
-    values = explicit_stat_text.split("&lt;br&gt;")
-    value_list = []
+    explicit_stat_text = explicit_stat_text.replace("&lt;br /&gt;", "\n") # replace line breaks in a single stat
+    values = explicit_stat_text.split("&lt;br&gt;") # separate stats
+    value_lists = []
     for value in values:
-        if "mw-customcollapsible-31&quot;&gt;&lt;td&gt;" in value:
+        if "mw-customcollapsible-31&quot;&gt;&lt;td&gt;" in value: # indicates that there are multiple choices for a single stat
             value = value.split("mw-customcollapsible-31&quot;&gt;&lt;td&gt;")[1]
             value = value.replace("&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;", "")
-            value_list.append(value.split("&lt;hr style=&quot;width: 20%&quot;&gt;"))
-        elif "&lt;hr style=&quot;width: 20%&quot;&gt;" in value:
-            value_list.append(value.split("&lt;hr style=&quot;width: 20%&quot;&gt;"))
+            value_lists.append(value.split("&lt;hr style=&quot;width: 20%&quot;&gt;"))
+        elif "&lt;hr style=&quot;width: 20%&quot;&gt;" in value: # also indicates that there are multiple choices for a single stat
+            value_lists.append(value.split("&lt;hr style=&quot;width: 20%&quot;&gt;"))
         else:
-            value_list.append([value])
-
-    return value_list
+            value_lists.append([value]) # single choice for a stat
+    return value_lists
 
 def shorten_moster_metadata(metadata_id):
     return metadata_id.replace("Metadata/Monsters/", "")
 
 def parameter_mapping(key, value):
     key = key.replace(" ", "_")
-    if key in ["explicit_stat_text"]:
+    if key in ["explicit_stat_text"]:   # html object that represents a list
         return fix_explicit_stat_text(value)
-    if key in ["tags"]:
+    if key in ["tags", "acquisition_tags"]:     # generic comma separated list
         return value.split(",") if value else []
-    if key in ["is_drop_restricted", "drop_enabled"]:
+    if key in ["is_drop_restricted", "drop_enabled"]:   # boolean
         return value == "1"
-    if key in ["area_level"]:
+    if key in ["area_level", "tier"]:   # integer
         return int(value) if value else 0
-    if key in ["boss_monster_ids", "drop_monsters"]:
+    if key in ["boss_monster_ids", "drop_monsters"]:    # list of metadata that needs to be shortened
         if not value:
             return []
         return  [shorten_moster_metadata(v) for v in value.split(",")]
-    if key in ["metadata_id"]:
+    if key in ["metadata_id"]:  # metadata that needs to be shortened
         return shorten_moster_metadata(value)
-    return value
+    return value  # value does not need to be converted
 
 def map_item(item):
     return {key.replace(" ", "_"): parameter_mapping(key, value) for key, value in item.items()}
 
 
-def get_uniques(offset: int=0):
+def fetch_unique_items(offset: int=0):
     limit = 500
     table = "items"
-    fields = ["name", "class_id", "base_item", "is_drop_restricted", "drop_enabled", "drop_monsters", "explicit_stat_text"]
+    fields = ["name", "class_id", "base_item", "is_drop_restricted", "drop_enabled", "drop_monsters", "explicit_stat_text", "acquisition_tags"]
+    where = "rarity=%22Unique%22"
+    return request_data_from_wiki([table], fields, where, "", limit, offset)
 
-    url = f"https://www.poewiki.net/w/api.php?action=cargoquery&tables={table}&fields={','.join(fields)}&where=rarity=%22Unique%22&limit={limit}&format=json&offset={offset}"
-    response = requests.get(url)
+def fetch_areas(offset: int=0):
+    limit = 500
+    fields = ["name", "area_level", "boss_monster_ids", "tags", "id"]
+    table = "areas"
+    where = "is_map_area=1"
+    return request_data_from_wiki([table], fields, where, "", limit, offset)
 
-    return [map_item(item["title"]) for item in response.json()["cargoquery"]]
+def fetch_unique_monsters(offset: int = 0):
+    limit = 500
+    fields = ["name", "metadata_id"]
+    table = "monsters"
+    where = "rarity=%22Unique%22"
+    return request_data_from_wiki([table], fields, where, "", limit, offset)
+
+def fetch_current_atlas_maps(offset: int = 0):
+    limit = 500
+    tables = ["maps", "areas"]
+    fields = ["areas.name", "maps.tier"]
+    where = "areas.is_map_area AND maps.tier > 0 AND maps.series=\"Necropolis\" AND areas.name != \"The Shaper's Realm\""
+    join_on= "areas.id = maps.area_id"
+    return request_data_from_wiki(tables, fields, where, join_on, limit, offset)
+
 
 def fetch_all_unique_items():
     all_uniques = []
     offset = 0
     while True:
-        new_uniques = get_uniques(offset)
+        new_uniques = fetch_unique_items(offset)
         offset += len(new_uniques)
         if len(new_uniques) == 0:
             break
         all_uniques.extend(new_uniques)
-    save_file("unique_items.min.json", all_uniques)
+    save_file("unique_items", all_uniques)
 
-def get_areas(offset: int=0):
-    limit = 500
-    fields = ["name", "area_level", "boss_monster_ids", "tags"]
-    table = "areas"
-    url = f"{base_url}&tables={table}%2C+&fields={','.join(fields)}&where=is_map_area=1&limit={limit}&offset={offset}&format=json"
-    response = requests.get(url)
-    return [map_item(item["title"]) for item in response.json()["cargoquery"]]
 
 
 def fetch_all_areas():
     all_areas = []
     offset = 0
     while True:
-        new_areas = get_areas(offset)
+        new_areas = fetch_areas(offset)
         offset += len(new_areas)
         if len(new_areas) == 0:
             break
@@ -102,40 +131,43 @@ def fetch_all_areas():
         areas_by_name[area["name"]].append(area)
     
     condensed_areas = []
-    for name, areas in areas_by_name.items():
-        condensed_area = {
-            "name": name,
-            "area_levels": sorted({area["area_level"] for area in areas}),
-            "boss_monster_ids": areas[0]["boss_monster_ids"],
-            "tags": areas[0]["tags"]
-        }
+    for areas in areas_by_name.values():
+        condensed_area = areas[0]
+        condensed_area["area_level"] = sorted({area["area_level"] for area in areas})
         condensed_areas.append(condensed_area)
-    save_file("areas.min.json", condensed_areas)
+    save_file("areas", condensed_areas)
 
-def get_bosses(offset: int = 0):
-    limit = 500
-    fields = ["name", "metadata_id"]
-    table = "monsters"
-    url = f"{base_url}&tables={table}&fields={','.join(fields)}&where=rarity=%22Unique%22&limit={limit}&offset={offset}&format=json"
-    response = requests.get(url)
-    return [map_item(item["title"]) for item in response.json()["cargoquery"]]
 
 def fetch_all_unique_monsters():
     all_bosses = []
     offset = 0
     while True:
-        new_bosses = get_bosses(offset)
+        new_bosses = fetch_unique_monsters(offset)
         offset += len(new_bosses)
         if len(new_bosses) == 0:
             break
         all_bosses.extend(new_bosses)
-    save_file("unique_monsters.min.json", all_bosses)
+    save_file("unique_monsters", {boss["metadata_id"]: boss["name"] for boss in all_bosses})
+
+
+
+def fetch_all_atlas_maps(offset: int = 0):
+    all_maps = []
+    offset = 0
+    while True:
+        new_maps = fetch_current_atlas_maps(offset)
+        offset += len(new_maps)
+        if len(new_maps) == 0:
+            break
+        all_maps.extend(new_maps)
+    save_file("atlas_maps", all_maps)
 
 
 def fetch_wiki_data():
     fetch_all_unique_items()
     fetch_all_unique_monsters()
     fetch_all_areas()
+    fetch_all_atlas_maps()
 
 
 if __name__ == "__main__":

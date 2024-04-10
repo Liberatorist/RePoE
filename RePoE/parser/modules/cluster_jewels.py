@@ -9,22 +9,19 @@ class cluster_jewels(Parser_Module):
         for row in relational_reader["PassiveTreeExpansionSkills.dat64"]:
             size = row["PassiveTreeExpansionJewelSizesKey"]["Name"]
             if size not in skills:
-                skills[size] = []
+                skills[size] = {}
 
-            #HACK, still missing the value but now we got the stats
             stats = {}
-            for stat in row["PassiveSkillsKey"]["Stats"]:
+            for i, stat in enumerate(row["PassiveSkillsKey"]["Stats"]):
                 for key, value, _ in stat.iter():
                     if key == "Id":
-                        stats[value] = 0
-            skills[size].append(
-                {
-                    "id": row["PassiveSkillsKey"]["Id"],
+                        stats[value] = row["PassiveSkillsKey"][f"Stat{i+1}Value"]
+                        break
+            skills[size][row["PassiveSkillsKey"]["Id"]] = {
                     "name": row["PassiveSkillsKey"]["Name"],
                     "stats": stats,
                     "tag": row["TagsKey"]["Id"],
                 }
-            )
 
         data = {}
         for row in relational_reader["PassiveTreeExpansionJewels.dat64"]:

@@ -233,26 +233,24 @@ class GemConverter:
 
         r["reservations"] = self._convert_reservations(gepl)
 
-        stats = []
+        r["stats"] = {}
         for k, v in zip(gesspl["FloatStats"], gesspl["BaseResolvedValues"]):
-            stats.append({"id": k["Id"], "value": v})
+            r["stats"][k["Id"]] = v
         for k, v in zip(gess["ConstantStats"], gess["ConstantStatsValues"]):
-            stats.append({"id": k["Id"], "value": v})
+            r["stats"][k["Id"]] = v
         for k, v in zip(gesspl["AdditionalStats"], gesspl["AdditionalStatsValues"]):
-            stats.append({"id": k["Id"], "value": v})
+            r["stats"][k["Id"]] = v
         for k in gess["ImplicitStats"]:
-            stats.append({"id": k["Id"], "value": 1})
+            r["stats"][k["Id"]] = 1
         for k in gesspl["AdditionalFlags"]:
-            stats.append({"id": k["Id"], "value": 1})
-        r["stats"] = stats
-
-        q_stats = []
+            r["stats"][k["Id"]] = 1
+            
+        r["quality_stats"] = {}
         for ge in gesspl["GrantedEffects"]:
             if ge["Id"] in self.granted_effect_quality_stats:
                 for geq in self.granted_effect_quality_stats[ge["Id"]]:
                     for k, v in zip(geq["StatsKeys"], geq["StatsValuesPermille"]):
-                        q_stats.append({"id": k["Id"], "value": v})
-        r["quality_stats"] = q_stats
+                        r["quality_stats"][k["Id"]] = v / 1000
 
         if multipliers is not None:
             stat_requirements = {}

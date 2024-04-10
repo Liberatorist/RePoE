@@ -159,16 +159,6 @@ class SupportGem(TypedDict):
     supports_gems_only: bool
 
 
-class GemQualityStat(TypedDict):
-    id: str
-    value: int
-
-
-class GemStat(TypedDict):
-    id: NotRequired[str]
-    value: NotRequired[int]
-
-
 class PerLevelStat(TypedDict):
     value: NotRequired[int]
 
@@ -196,9 +186,9 @@ class Vaal(TypedDict):
 class GemStatic(TypedDict):
     costs: NotRequired[Cost]
     attack_speed_multiplier: NotRequired[float]
-    quality_stats: NotRequired[List[GemQualityStat]]
+    quality_stats: NotRequired[Dict[str, int]]
     stat_requirements: NotRequired[Dict[Literal["dex", "int", "str"], int]]
-    stats: NotRequired[List[NotRequired[GemStat]]]
+    stats: NotRequired[Dict[str, int]]
     cost_multiplier: NotRequired[int]
     cooldown: NotRequired[int]
     stored_uses: NotRequired[int]
@@ -316,7 +306,6 @@ class Rect(TypedDict):
 
 
 class ClusterJewelPassiveSkill(TypedDict):
-    id: str
     name: str
     stats: Dict[str, int]
     tag: str
@@ -327,7 +316,7 @@ class ClusterJewel(TypedDict):
     min_skills: int
     name: str
     notable_indices: List[int]
-    passive_skills: List[ClusterJewelPassiveSkill]
+    passive_skills: Dict[str, ClusterJewelPassiveSkill]
     size: str
     small_indices: List[int]
     socket_indices: List[int]
@@ -465,9 +454,14 @@ class UniqueItem(TypedDict):
     drop_enabled: bool
     drop_monsters: List[str]
     explicit_stat_text: List[str]
+    acquisition_tags: List[str]
 
 class Area(TypedDict):
     name: str
     area_levels: List[int]
     boss_monster_ids: List[str]
     tags: List[str]
+
+class Map(TypedDict):
+    name: str
+    tier: int

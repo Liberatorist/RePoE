@@ -2,6 +2,7 @@ import argparse
 import json
 
 from importlib import reload
+from typing import List
 import requests
 import os
 
@@ -16,6 +17,7 @@ from RePoE.parser.util import (
     create_ot_file_cache,
     load_file_system,
 )
+from RePoE.poe_types import StatTranslation
 from RePoE.wiki import fetch_wiki_data
 
 
@@ -71,7 +73,6 @@ def fetch_trees():
     skill_tree_url = "https://raw.githubusercontent.com/grindinggear/skilltree-export/fea1986f746d6c8ba9dfc391c755a91c2ef0baed/data.json"
     with open(os.path.join(__DATA_PATH__, "skill_tree.min.json"), "w") as f:
         json_string = requests.get(skill_tree_url).json()
-
         f.write(json.dumps(json_string, separators=(",", ":"), sort_keys=True))
 
     atlas_tree_url = "https://raw.githubusercontent.com/grindinggear/atlastree-export/master/data.json"
@@ -80,7 +81,31 @@ def fetch_trees():
         f.write(json.dumps(json_string, separators=(",", ":"), sort_keys=True))
 
 
+
+
+def combine_translations():
+    all_translations = []
+    handled_id_tuples = set()
+    # iterate over RePoE/data/stat_translations/*.min.json
+    for filename in os.listdir("RePoE/data/stat_translations"):
+        with open(os.path.join("RePoE/data/stat_translations", filename), "r") as f:
+            translation_table: List[StatTranslation] = json.load(f)
+        for translation in translation_table:
+            ids = tuple(translation["ids"])
+            if ids in handled_id_tuples:
+                continue
+            handled_id_tuples.add(ids)
+            all_translations.append(translation)
+    
+    with open("RePoE/data/stat_translations.min.json", "w") as f:
+        json.dump(all_translations, f, separators=(",", ":"))
+    with open("RePoE/data/stat_translations.json", "w") as f:
+        json.dump(all_translations, f, indent=4)
+
+
+
 if __name__ == "__main__":
     main()
     fetch_trees()
     fetch_wiki_data()
+    combine_translations()
