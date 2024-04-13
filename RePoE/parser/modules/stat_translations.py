@@ -12,6 +12,8 @@ def _convert_tags(n_ids, tags, tags_types):
             f[tag] = "#"
         elif tag_type == "":
             f[tag] = "#"
+        elif tag_type == "+":
+            f[tag] = "+#"
         else:
             print("Unknown tag type:", tag_type)
     return f

@@ -1,9 +1,7 @@
 
-import json
 import math
-import os
-import time
-from typing import Callable, Dict, List, Optional, Tuple, Union
+from typing import Callable, Dict, List, Literal, Optional, Tuple, Union
+from venv import logger
 
 from RePoE.poe_types import StatTranslation, TranslationCondition
 from RePoE import mods, stat_translations, cluster_jewels
@@ -38,19 +36,12 @@ class Translator:
 
 
     @staticmethod
-    def _satisfies_conditions(conditions: List[TranslationCondition], min_max_range: List[Tuple[float, float]]) -> bool:
-        # checks if the min_max_range satisfies the conditions
-        # this will break down for mods like on ventor's gamble where the ranges go from negative to positive
-        # and there is no canonical way to translate the stat for the entire range
-        # in that case we will assume that the max value determines the translation
-        
-        for condition, min_max_tuple in zip(conditions, min_max_range):
-            if condition == {} or condition.get("negated"): # honestly no idea what this does
-                continue
-            if "min" in  condition and min_max_tuple[1] < condition["min"]:
-                return False
-            if "max" in condition and min_max_tuple[1] > condition["max"]:
-                return False
+    def _satisfies_conditions(conditions: List[TranslationCondition], values: List[float]) -> bool:
+        for condition, value in zip(conditions, values):
+            if condition == {}:
+                continue            
+            if not condition.get("min", -math.inf) <= value <= condition.get("max", math.inf):
+                return False if not condition.get("negated") else True
         return True
     
 
@@ -96,7 +87,7 @@ class Translator:
             case "divide_by_one_hundred_2dp":
                 return round(value / 100, 2)
             case "per_minute_to_per_second_2dp_if_required":
-                return round(value * 60, 2)
+                return round(value / 60, 2)
             case "30%_of_value":
                 return value * 0.3
             case "deciseconds_to_seconds":
@@ -127,21 +118,21 @@ class Translator:
                 # Forbidden Shako. No idea how to map values to supports
                 return value
             case "per_minute_to_per_second_0dp":
-                return math.floor(value * 60)
+                return math.floor(value / 60)
             case "divide_by_one_hundred_and_negate":
                 return -value / 100
             case "per_minute_to_per_second_1dp":
-                return round(value * 60, 1)
+                return round(value / 60, 1)
             case "milliseconds_to_seconds_1dp":
                 return round(value / 1000, 1)
             case "per_minute_to_per_second_2dp":
-                return round(value * 60, 2)
+                return round(value / 60, 2)
             case "plus_two_hundred":
                 return value + 200
             case "divide_by_three":
                 return value / 3
             case "per_minute_to_per_second":
-                return value * 60
+                return value / 60
             case "old_leech_percent":
                 return value / 100
             case "divide_by_five":
@@ -163,6 +154,22 @@ class Translator:
             case _:
                 raise ValueError(f"Unknown index handler {handler}")
 
+    @staticmethod
+    def _get_max_value(stat: dict) -> float:
+        return stat["value"] if "value" in stat else stat["max"]
+
+    def _format_values(self, format_list: List[Literal['ignore', '#', '+#']], value_list: List[List[float]]) -> List[str]:
+        formatted_values = []
+        for format, values in zip(format_list, value_list):
+            value_string = self._translate_range((values[0], values[1]))
+            if format == "ignore":
+                continue
+            if format == "#":
+                formatted_values.append(value_string)
+            if format == "+#":
+                formatted_values.append(f"+{value_string}")
+        return formatted_values
+        
 
     def translate_stats(self, stats: Union[List, Dict]) -> List[str]:
         translated_stats = []
@@ -176,23 +183,61 @@ class Translator:
         untranslated_stats = set(stat_dict.keys())
         
         for translation in self._translation_table:
-            if set(translation["ids"]).intersection(untranslated_stats) == set(translation["ids"]):
+            stat_intersection = set(translation["ids"]).intersection(untranslated_stats)
+
+
+
+            if stat_intersection:
+                values = [stat_dict[stat_id][1] if stat_id in stat_dict else 0 for stat_id in translation["ids"]]
+                min_max_tuples = [stat_dict[stat_id] if stat_id in stat_dict else (0, 0) for stat_id in translation["ids"]]
+
                 for translation_candidate in translation["English"]:
-                    if self._satisfies_conditions(translation_candidate["condition"], [stat_dict[stat_id] for stat_id in translation["ids"]]):
+                    if self._satisfies_conditions(translation_candidate["condition"], values):
                         handled_values: List[List[float]] = [ ]	
-                        for stat_id, handlers in zip(translation["ids"], translation_candidate["index_handlers"]):
+                        for minmax, handlers in zip(min_max_tuples, translation_candidate["index_handlers"]):
+                            if minmax is None:
+                                continue
                             handled_min_max_pair = []
-                            for value in stat_dict[stat_id]:
+                            for value in minmax:
                                 for handler in handlers:
                                     value = self._apply_index_handler_to_value(value, handler)
                                 handled_min_max_pair.append(value)
                             handled_values.append(handled_min_max_pair)
-                        translated_stats.append(translation_candidate["string"].format(*[self._translate_range((values[0], values[1])) for values in handled_values]))
+                        inserts = self._format_values(translation_candidate["format"], handled_values)
+                        if not inserts:
+                            translated_stats.append(translation_candidate["string"])
+                        else:
+                            translated_stats.append(translation_candidate["string"].format(*inserts))
                         untranslated_stats -= set(translation["ids"])
                         break
             if not untranslated_stats:
                 break
         if untranslated_stats:
-            raise Warning(f"Untranslated stats: {untranslated_stats}")
+            logger.warning(f"Untranslated stats: {untranslated_stats} ")
 
         return translated_stats
+
+
+
+if __name__ == "__main__":
+    import RePoE
+
+    mods = RePoE.mods
+    mod = mods["CullingStrikeOnBleedingEnemiesUber1"]
+    # mod = mods["AbyssAddedChaosSuffixJewel1"]
+    # mod = mods["HarvestFlaskEnchantmentChargesUsedLoweredOnUse4"]
+    # mod = mods["LocalFlaskChargesUsedUniqueFlask2"]
+
+    # mod = mods["LocalFlaskChargesUsedUniqueFlask6"]
+    mod = mods["EnchantmentChainHookConeRadiusPer12Rage1"]
+    translator = Translator()
+    print(translator.translate_stats(mod["stats"]))
+    # max_stats = 0
+    # giga_mod = None
+    # for mod in mods.values():
+    #     if len(mod["stats"]) > max_stats:
+    #         max_stats = len(mod["stats"])
+    #         giga_mod = mod
+
+    # print(giga_mod)
+        
