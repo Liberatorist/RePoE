@@ -1,4 +1,4 @@
-from typing import Dict, List, Literal, NotRequired, TypedDict, Union
+from typing import Dict, List, Literal, NotRequired, Optional, TypedDict, Union
 
 
 class Requirements(TypedDict):
@@ -40,17 +40,11 @@ class BaseItem(TypedDict):
 
 class WikiBaseItem(TypedDict):
     name: str
-    item_class: str
-    inventory_width: int
-    inventory_height: int
-    drop_level: int
-    implicits: list[str]
-    tags: list[str]
-    visual_identity: VisualIdentity
-    properties: Dict[str, BaseItemProperty]
-    release_state: str
-    requirements: NotRequired[Requirements]
-    grants_buff: NotRequired[FlaskBuff]
+    class_id: str
+    drop_enabled: bool
+    is_drop_restricted: bool
+    tags: List[str]
+    base_item: Optional[str]
 
 
 class Unarmed(TypedDict):
@@ -480,6 +474,9 @@ class UniqueItem(TypedDict):
     drop_monsters: List[str]
     explicit_stat_text: List[str]
     acquisition_tags: List[str]
+    tags: List[str]
+    drop_areas: List[str]
+    drop_text: str
 
 
 class Area(TypedDict):

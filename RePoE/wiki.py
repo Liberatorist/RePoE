@@ -75,7 +75,7 @@ def parameter_mapping(key, value):
     if key in ["area_level", "tier"]:   # integer
         return int(value) if value else 0
     # list of metadata that needs to be shortened
-    if key in ["boss_monster_ids", "drop_monsters"]:
+    if key in ["boss_monster_ids", "drop_monsters", "drop_areas"]:
         if not value:
             return []
         return [shorten_moster_metadata(v) for v in value.split(",")]
@@ -90,8 +90,8 @@ def map_item(item):
 
 def fetch_unique_items():
     table = "items"
-    fields = ["name", "class_id", "base_item", "is_drop_restricted",
-              "drop_enabled", "drop_monsters", "explicit_stat_text", "acquisition_tags"]
+    fields = ["name", "class_id", "base_item", "is_drop_restricted", "tags", "drop_text",
+              "drop_enabled", "drop_monsters", "drop_areas", "explicit_stat_text", "acquisition_tags"]
     where = "rarity=%22Unique%22"
     data = request_data_from_wiki([table], fields, where, "")
     save_file("unique_items", data)
@@ -143,12 +143,3 @@ def fetch_wiki_data():
 
 if __name__ == "__main__":
     fetch_wiki_data()
-    # transfigured_gems = []
-    # with open(os.path.join(__REPOE_DIR__, "wikidata", "base_items_wiki.min.json")) as f:
-    #     data = json.load(f)
-    #     for item in data:
-    #         if item["class_id"] == "Active Skill Gem" and item["is_drop_restricted"] and not "Vaal" in item["name"] and " of " in item["name"]:
-    #             transfigured_gems.append(item["name"])
-    #             print(item["name"])
-
-    # print(len(transfigured_gems))
