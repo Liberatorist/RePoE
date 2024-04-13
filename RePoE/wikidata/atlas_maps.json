@@ -248,6 +248,10 @@
     "tier": 9
   },
   {
+    "name": "Maelstr\u00f6m of Chaos",
+    "tier": 5
+  },
+  {
     "name": "Mausoleum",
     "tier": 3
   },
@@ -518,6 +522,10 @@
   {
     "name": "Waterways",
     "tier": 6
+  },
+  {
+    "name": "Whakawairua Tuahu",
+    "tier": 3
   },
   {
     "name": "Wharf",

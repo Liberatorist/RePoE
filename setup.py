@@ -9,7 +9,7 @@ URL = "https://github.com/Liberatorist/RePoE"
 EMAIL = ""
 AUTHOR = "Liberatorist"
 REQUIRES_PYTHON = ">=3.11.0"
-VERSION = "3.24.4"
+VERSION = "3.24.5"
 
 # What packages are required for this module to be executed?
 REQUIRED = []
@@ -25,8 +25,16 @@ for file in os.listdir("RePoE/data"):
     # not packing all stat translations for now
     if file.endswith(".min.json"):
         data_files.append(os.path.join("RePoE/data", file))
-
 directory = "/".join(sys.prefix.split("/")[:-2]) + "/RePoE/data"
+
+wiki_data_files = []
+
+for file in os.listdir("RePoE/wikidata"):
+    # not packing all stat translations for now
+    if file.endswith(".min.json"):
+        wiki_data_files.append(os.path.join("RePoE/wikidata", file))
+
+wiki_directory = "/".join(sys.prefix.split("/")[:-2]) + "/RePoE/wikidata"
 
 setup(
     name=NAME,
@@ -36,13 +44,14 @@ setup(
     author_email=EMAIL,
     python_requires=REQUIRES_PYTHON,
     url=URL,
-    py_modules=["RePoE.poe_types", "RePoE.util"],
+    py_modules=["RePoE.poe_types", "RePoE.util", "RePoE.wikidata.__init__"],
     install_requires=REQUIRED,
     extras_require=EXTRAS,
     license="proprietary",
 
     data_files=[
         (directory, data_files),
+        (wiki_directory, wiki_data_files),
     ]
 
 )

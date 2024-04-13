@@ -38,6 +38,21 @@ class BaseItem(TypedDict):
     grants_buff: NotRequired[FlaskBuff]
 
 
+class WikiBaseItem(TypedDict):
+    name: str
+    item_class: str
+    inventory_width: int
+    inventory_height: int
+    drop_level: int
+    implicits: list[str]
+    tags: list[str]
+    visual_identity: VisualIdentity
+    properties: Dict[str, BaseItemProperty]
+    release_state: str
+    requirements: NotRequired[Requirements]
+    grants_buff: NotRequired[FlaskBuff]
+
+
 class Unarmed(TypedDict):
     attack_time: float
     min_physical_damage: int
@@ -298,6 +313,7 @@ class ClusterJewelNotable(TypedDict):
     jewel_stat: str
     name: str
 
+
 class Rect(TypedDict):
     height: int
     width: int
@@ -335,12 +351,14 @@ class Ascendancy(TypedDict):
     id: str
     name: str
 
+
 class PoEClass(TypedDict):
     ascendancies: List[Ascendancy]
     base_dex: int
     base_int: int
     base_str: int
     name: str
+
 
 class SkillTreeConstants(TypedDict):
     PSSCentreInnerRadius: int
@@ -349,13 +367,17 @@ class SkillTreeConstants(TypedDict):
     orbitRadii: List[int]
     skillsPerOrbit: List[int]
 
+
 class SkillTreeExtraImage(TypedDict):
-        image: str
-        x: float
-        y: float
+    image: str
+    x: float
+    y: float
+
+
 class SkillTreeBackground(TypedDict):
     image: str
     isHalfImage: bool
+
 
 class SkillTreeGroup(TypedDict):
     background: SkillTreeBackground
@@ -364,10 +386,12 @@ class SkillTreeGroup(TypedDict):
     x: float
     y: float
 
+
 class MasteryEffect(TypedDict):
     effect: int
-    stats: List[str]    
+    stats: List[str]
     reminderText: NotRequired[List[str]]
+
 
 class SkillTreeNode(TypedDict):
     group: int
@@ -446,6 +470,7 @@ class AtlasTree(TypedDict):
     sprites: dict
     tree: Literal["Atlas"]
 
+
 class UniqueItem(TypedDict):
     name: str
     class_id: str
@@ -456,11 +481,13 @@ class UniqueItem(TypedDict):
     explicit_stat_text: List[str]
     acquisition_tags: List[str]
 
+
 class Area(TypedDict):
     name: str
     area_levels: List[int]
     boss_monster_ids: List[str]
     tags: List[str]
+
 
 class Map(TypedDict):
     name: str

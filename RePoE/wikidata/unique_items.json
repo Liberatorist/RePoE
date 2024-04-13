@@ -5045,7 +5045,9 @@
     "name": "Cinderswallow Urn"
   },
   {
-    "acquisition_tags": [],
+    "acquisition_tags": [
+      "Synthesis"
+    ],
     "base_item": "Prismatic Ring",
     "class_id": "Ring",
     "drop_enabled": true,
@@ -9031,7 +9033,9 @@
     "base_item": "Infernal Sword",
     "class_id": "Two Hand Sword",
     "drop_enabled": true,
-    "drop_monsters": [],
+    "drop_monsters": [
+      "MavenBoss/TheMaven"
+    ],
     "explicit_stat_text": [
       [
         "Adds (600-650) to (750-800) [[Chaos Damage]]"
@@ -11262,10 +11266,10 @@
         "You gain Divinity for 10 seconds on reaching maximum Divine Charges\nLose all Divine [[Charge|Charges]] when you gain Divinity"
       ],
       [
-        "Nearby Allies' Action Speed cannot be modified to below base value"
+        "&lt;span class=&quot;hoverbox c-tooltip&quot;&gt;&lt;span class=&quot;hoverbox__activator c-tooltip__activator&quot;&gt;Nearby &lt;/span&gt;&lt;span class=&quot;hoverbox__display c-tooltip__display&quot;&gt;5.0m radius&lt;/span&gt;&lt;/span&gt; Allies' Action Speed cannot be modified to below Base Value"
       ],
       [
-        "Nearby Enemies cannot deal Critical Strikes"
+        "&lt;span class=&quot;hoverbox c-tooltip&quot;&gt;&lt;span class=&quot;hoverbox__activator c-tooltip__activator&quot;&gt;Nearby &lt;/span&gt;&lt;span class=&quot;hoverbox__display c-tooltip__display&quot;&gt;6.0m radius&lt;/span&gt;&lt;/span&gt; Enemies cannot deal [[Critical strike|Critical Strikes]]"
       ]
     ],
     "is_drop_restricted": false,
@@ -11298,10 +11302,10 @@
         "You gain Divinity for 10 seconds on reaching maximum Divine Charges\nLose all Divine [[Charge|Charges]] when you gain Divinity"
       ],
       [
-        "Nearby Allies' Action Speed cannot be modified to below base value"
+        "&lt;span class=&quot;hoverbox c-tooltip&quot;&gt;&lt;span class=&quot;hoverbox__activator c-tooltip__activator&quot;&gt;Nearby &lt;/span&gt;&lt;span class=&quot;hoverbox__display c-tooltip__display&quot;&gt;5.0m radius&lt;/span&gt;&lt;/span&gt; Allies' Action Speed cannot be modified to below Base Value"
       ],
       [
-        "Nearby Enemies cannot deal Critical Strikes"
+        "&lt;span class=&quot;hoverbox c-tooltip&quot;&gt;&lt;span class=&quot;hoverbox__activator c-tooltip__activator&quot;&gt;Nearby &lt;/span&gt;&lt;span class=&quot;hoverbox__display c-tooltip__display&quot;&gt;6.0m radius&lt;/span&gt;&lt;/span&gt; Enemies cannot deal [[Critical strike|Critical Strikes]]"
       ]
     ],
     "is_drop_restricted": true,
@@ -16086,7 +16090,7 @@
     "drop_monsters": [],
     "explicit_stat_text": [
       [
-        "Area has patches of Chilled Ground"
+        "Area has patches of [[Chill|Chilled]] Ground"
       ],
       [
         "20 patches with Ground Effect per 100 tiles (Hidden)"
@@ -17022,7 +17026,9 @@
     "name": "Mask of the Tribunal"
   },
   {
-    "acquisition_tags": [],
+    "acquisition_tags": [
+      "Synthesis"
+    ],
     "base_item": "Magistrate Crown",
     "class_id": "Helmet",
     "drop_enabled": true,
@@ -27226,7 +27232,7 @@
         "[[Minion|Minions]] deal (45-51) to (66-78) additional [[Physical Damage]]"
       ],
       [
-        "If you Consumed a corpse Recently, you and nearby Allies Regenerate 5% of [[Life]] per second"
+        "If you Consumed a corpse Recently, you and [[Nearby|nearby]] Allies Regenerate 5% of [[Life]] per second"
       ]
     ],
     "is_drop_restricted": false,

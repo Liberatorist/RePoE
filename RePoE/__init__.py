@@ -45,7 +45,3 @@ cluster_jewel_notables: List[ClusterJewelNotable] = load_json(
 cost_types: Dict[str, CostType] = load_json("cost_types.min.json")
 skill_tree: SkillTree = load_json("skill_tree.min.json")
 atlas_tree: AtlasTree = load_json("atlas_tree.min.json")
-unique_items: List[UniqueItem] = load_json("unique_items.min.json")
-unique_monsters: Dict[str, str] = load_json("unique_monsters.min.json")
-areas: List[Area] = load_json("areas.min.json")
-maps: List[Map] = load_json("atlas_maps.min.json")
