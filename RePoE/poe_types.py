@@ -476,7 +476,8 @@ class UniqueItem(TypedDict):
     acquisition_tags: List[str]
     tags: List[str]
     drop_areas: List[str]
-    drop_text: str
+    drop_text: Optional[str]
+    icon_url: str
 
 
 class Area(TypedDict):

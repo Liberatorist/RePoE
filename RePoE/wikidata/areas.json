@@ -127,9 +127,6 @@
       "map",
       "delve_chest",
       "einharmaps",
-      "library_area",
-      "undying_boss_area",
-      "undyingcultist_map",
       "map_drops_can_upgrade_to_fortress"
     ]
   },
@@ -207,8 +204,6 @@
       "map",
       "indoors_area",
       "einharmaps",
-      "vile_areas",
-      "toxic_pool_area",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -277,7 +272,6 @@
       "map",
       "limited_tempests",
       "area_with_water",
-      "necromancer_area",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -301,10 +295,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "marketplace_area",
-      "kitava_cultist_area",
-      "bridge_area",
-      "city_home_map",
       "map_drops_can_upgrade_to_sanctuary"
     ]
   },
@@ -330,11 +320,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "vaal_ruin_area",
-      "ruined_vaal_city_area",
-      "ruined_area",
-      "city_home_map",
-      "sun_nature_area",
       "map_drops_can_upgrade_to_citadel"
     ]
   },
@@ -404,7 +389,6 @@
       "indoors_area",
       "map",
       "einharmaps",
-      "spider_boss_area",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -451,9 +435,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "arachnid_tomb_map_area",
-      "spider_boss_area",
-      "bridge_area",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -516,9 +497,6 @@
     "tags": [
       "map",
       "einharmaps",
-      "marketplace_area",
-      "ruined_area",
-      "city_home_map",
       "map_drops_can_upgrade_to_fortress"
     ]
   },
@@ -583,10 +561,6 @@
       "map",
       "indoors_area",
       "einharmaps",
-      "daresso_area",
-      "arena_area",
-      "triple_boss_map",
-      "pitfight_area",
       "map_drops_can_upgrade_to_fortress"
     ]
   },
@@ -614,7 +588,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "sun_nature_area",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -672,8 +645,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "military_area",
-      "bridge_area",
       "map_drops_can_upgrade_to_fortress"
     ]
   },
@@ -732,9 +703,6 @@
     "tags": [
       "map",
       "einharmaps",
-      "warehouse_area",
-      "urban_sarn_area",
-      "military_area",
       "map_drops_can_upgrade_to_fortress"
     ]
   },
@@ -778,9 +746,6 @@
     "tags": [
       "map",
       "einharmaps",
-      "fields_area",
-      "forest_map_area",
-      "archer_boss_area",
       "map_drops_can_upgrade_to_ziggurat"
     ]
   },
@@ -800,40 +765,6 @@
     ]
   },
   {
-    "area_level": 67,
-    "boss_monster_ids": [
-      "Totems/TotemMapBossCold"
-    ],
-    "id": "MapTier2_4",
-    "name": "Atoll",
-    "tags": [
-      "map",
-      "area_with_water",
-      "einharmaps",
-      "map_area_with_open_water",
-      "ocean_area",
-      "windy_area",
-      "totem_boss_area"
-    ]
-  },
-  {
-    "area_level": 69,
-    "boss_monster_ids": [
-      "Totems/TotemMapBossCold"
-    ],
-    "id": "Map2Tier2_4",
-    "name": "Atoll",
-    "tags": [
-      "map",
-      "area_with_water",
-      "einharmaps",
-      "map_area_with_open_water",
-      "ocean_area",
-      "windy_area",
-      "totem_boss_area"
-    ]
-  },
-  {
     "area_level": 73,
     "boss_monster_ids": [
       "Totems/TotemMapBossCold"
@@ -844,29 +775,7 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "map_area_with_open_water",
-      "ocean_area",
-      "windy_area",
-      "totem_boss_area",
-      "sun_nature_area",
       "map_drops_can_upgrade_to_citadel"
-    ]
-  },
-  {
-    "area_level": 75,
-    "boss_monster_ids": [
-      "Totems/TotemMapBossCold"
-    ],
-    "id": "MapAtlasAtoll",
-    "name": "Atoll",
-    "tags": [
-      "map",
-      "area_with_water",
-      "einharmaps",
-      "map_area_with_open_water",
-      "ocean_area",
-      "windy_area",
-      "totem_boss_area"
     ]
   },
   {
@@ -910,10 +819,6 @@
       "area_with_water",
       "no_echo",
       "einharmaps",
-      "has_foxes_area",
-      "den_area",
-      "cemetery_map_area",
-      "bear_boss_map",
       "map_drops_can_upgrade_to_citadel"
     ]
   },
@@ -948,8 +853,6 @@
       "cannot_be_twinned",
       "delve_chest",
       "einharmaps",
-      "wealthy_area",
-      "church",
       "map_drops_can_upgrade_to_sanctuary"
     ]
   },
@@ -963,10 +866,6 @@
     "tags": [
       "map",
       "einharmaps",
-      "marketplace_area",
-      "undying_boss_area",
-      "ruined_area",
-      "city_home_map",
       "map_drops_can_upgrade_to_citadel"
     ]
   },
@@ -1028,9 +927,6 @@
     "tags": [
       "map",
       "einharmaps",
-      "ocean_area",
-      "peaceful_map",
-      "sun_nature_area",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -1057,10 +953,7 @@
     "name": "Beach Landing",
     "tags": [
       "map",
-      "area_with_water",
-      "einharmaps",
-      "coast_boat_area",
-      "map_area_with_open_water"
+      "einharmaps"
     ]
   },
   {
@@ -1074,8 +967,6 @@
       "map",
       "cannot_be_twinned",
       "einharmaps",
-      "kitava_area",
-      "church",
       "cannot_possess_boss",
       "map_drops_can_upgrade_to_citadel"
     ]
@@ -1136,8 +1027,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "fetid_area",
-      "toxic_pool_area",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -1203,10 +1092,6 @@
       "indoors_area",
       "map",
       "einharmaps",
-      "catacomb_area",
-      "crypt_area",
-      "summoner_area",
-      "necromancer_area",
       "map_drops_can_upgrade_to_sanctuary"
     ]
   },
@@ -1222,8 +1107,6 @@
     "tags": [
       "map",
       "einharmaps",
-      "forest_map_area",
-      "dark_forest_area",
       "cannot_be_twinned",
       "map_drops_can_upgrade_to_ziggurat"
     ]
@@ -1250,11 +1133,6 @@
       "map",
       "indoors_area",
       "einharmaps",
-      "bandit_area",
-      "alira_area",
-      "summoner_area",
-      "cemetery_map_area",
-      "sun_nature_area",
       "map_drops_can_upgrade_to_sanctuary"
     ]
   },
@@ -1305,8 +1183,6 @@
       "indoors_area",
       "map",
       "unique_map",
-      "cave_area",
-      "den_area",
       "map_drops_can_upgrade_to_citadel"
     ]
   },
@@ -1338,8 +1214,6 @@
       "indoors_area",
       "map",
       "einharmaps",
-      "prison_area",
-      "summoner_area",
       "map_drops_can_upgrade_to_citadel"
     ]
   },
@@ -1355,10 +1229,6 @@
       "no_echo",
       "area_with_water",
       "einharmaps",
-      "kaom_area",
-      "king_boss_area",
-      "karui_map",
-      "sun_nature_area",
       "map_drops_can_upgrade_to_ziggurat"
     ]
   },
@@ -1408,9 +1278,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "archer_boss_area",
-      "scavenger_boss_area",
-      "sun_nature_area",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -1473,9 +1340,6 @@
       "indoors_area",
       "map",
       "einharmaps",
-      "belly_area",
-      "harvest_area",
-      "vile_areas",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -1530,13 +1394,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "has_road_area",
-      "crossroad_area",
-      "has_foxes_area",
-      "bandit_area",
-      "kraityn_area",
-      "ruined_area",
-      "bridge_area",
       "map_drops_can_upgrade_to_fortress"
     ]
   },
@@ -1551,10 +1408,6 @@
       "indoors_area",
       "map",
       "einharmaps",
-      "shavronne_area",
-      "unholy_trio_area",
-      "prison_area",
-      "trio_soul_area",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -1654,11 +1507,6 @@
       "map",
       "cannot_be_twinned",
       "einharmaps",
-      "graveyard_area",
-      "rain_area",
-      "cemetery_map_area",
-      "god_boss_map_area",
-      "bear_boss_map",
       "map_drops_can_upgrade_to_sanctuary"
     ]
   },
@@ -1725,9 +1573,6 @@
       "area_with_water",
       "delve_chest",
       "einharmaps",
-      "aqueduct_area",
-      "scavenger_boss_area",
-      "peaceful_map",
       "map_drops_can_upgrade_to_fortress"
     ]
   },
@@ -1743,10 +1588,6 @@
       "area_with_water",
       "indoors_area",
       "einharmaps",
-      "wealthy_area",
-      "scavenger_boss_area",
-      "labyrinth_tileset_area",
-      "city_home_map",
       "map_drops_can_upgrade_to_citadel"
     ]
   },
@@ -1890,9 +1731,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "triple_boss_map",
-      "kitava_cultist_area",
-      "city_home_map",
       "map_drops_can_upgrade_to_sanctuary"
     ]
   },
@@ -1908,10 +1746,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "snow_area",
-      "solaris_area",
-      "lunaris_area",
-      "god_boss_map_area",
       "map_drops_can_upgrade_to_citadel"
     ]
   },
@@ -1973,10 +1807,6 @@
     "tags": [
       "map",
       "einharmaps",
-      "lunaris_outer_area",
-      "urban_sarn_area",
-      "rain_area",
-      "military_area",
       "map_drops_can_upgrade_to_fortress"
     ]
   },
@@ -1991,10 +1821,6 @@
       "map",
       "no_echo",
       "einharmaps",
-      "daresso_area",
-      "arena_area",
-      "pitfight_area",
-      "king_boss_area",
       "map_drops_can_upgrade_to_fortress"
     ]
   },
@@ -2045,8 +1871,6 @@
       "area_with_water",
       "delve_chest",
       "einharmaps",
-      "wealthy_area",
-      "labyrinth_tileset_area",
       "map_drops_can_upgrade_to_sanctuary"
     ]
   },
@@ -2062,10 +1886,6 @@
       "area_with_water",
       "cannot_be_twinned",
       "einharmaps",
-      "reef_area",
-      "map_area_with_open_water",
-      "ocean_area",
-      "ruined_area",
       "map_drops_can_upgrade_to_citadel"
     ]
   },
@@ -2083,15 +1903,6 @@
       "no_echo",
       "area_with_water",
       "einharmaps",
-      "belly_area",
-      "harvest_area",
-      "core_map_area",
-      "vile_areas",
-      "doedre_area",
-      "shavronne_area",
-      "maligaro_area",
-      "unholy_trio_area",
-      "piety_area",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -2179,8 +1990,6 @@
       "indoors_area",
       "map",
       "einharmaps",
-      "triple_boss_map",
-      "rogue_exile_boss_area",
       "map_drops_can_upgrade_to_sanctuary"
     ]
   },
@@ -2196,10 +2005,6 @@
     "tags": [
       "map",
       "einharmaps",
-      "garden_area",
-      "lightning_area",
-      "triple_boss_map",
-      "rain_area",
       "map_drops_can_upgrade_to_citadel"
     ]
   },
@@ -2329,12 +2134,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "reef_area",
-      "ship_graveyard_area",
-      "map_area_with_open_water",
-      "ocean_area",
-      "golem_boss_area",
-      "karui_map",
       "map_drops_can_upgrade_to_citadel"
     ]
   },
@@ -2359,8 +2158,6 @@
     "tags": [
       "map",
       "einharmaps",
-      "fire_area",
-      "sun_nature_area",
       "map_drops_can_upgrade_to_ziggurat"
     ]
   },
@@ -2376,10 +2173,6 @@
       "map",
       "delve_chest",
       "einharmaps",
-      "wealthy_area",
-      "church",
-      "kitava_cultist_area",
-      "blood_mage_boss_map",
       "map_drops_can_upgrade_to_sanctuary"
     ]
   },
@@ -2393,10 +2186,21 @@
     "tags": [
       "map",
       "einharmaps",
-      "wealthy_area",
-      "blood_mage_boss_map",
-      "city_home_map",
       "map_drops_can_upgrade_to_sanctuary"
+    ]
+  },
+  {
+    "area_level": 83,
+    "boss_monster_ids": [
+      "LeagueAzmeri/VoodooKingBoss/VoodooKingBoss2"
+    ],
+    "id": "AzmeriLeagueBoss",
+    "name": "Crux of Nothingness",
+    "tags": [
+      "map",
+      "no_leaguestone",
+      "map_not_on_atlas",
+      "no_possessed_foe"
     ]
   },
   {
@@ -2479,12 +2283,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "mine_area",
-      "cave_area",
-      "triple_boss_map",
-      "crystal_ore_area",
-      "crystalline_area",
-      "undying_boss_area",
       "map_drops_can_upgrade_to_ziggurat"
     ]
   },
@@ -2541,7 +2339,6 @@
       "indoors_area",
       "map",
       "einharmaps",
-      "crypt_area",
       "map_drops_can_upgrade_to_ziggurat"
     ]
   },
@@ -2592,11 +2389,6 @@
       "map",
       "no_echo",
       "einharmaps",
-      "has_road_area",
-      "forest_map_area",
-      "dark_forest_area",
-      "rigwald_area",
-      "king_boss_area",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -2710,9 +2502,6 @@
       "cannot_be_twinned",
       "delve_chest",
       "einharmaps",
-      "church",
-      "kitava_cultist_area",
-      "blood_mage_boss_map",
       "map_drops_can_upgrade_to_sanctuary"
     ]
   },
@@ -2754,9 +2543,6 @@
     "tags": [
       "map",
       "einharmaps",
-      "desert_area",
-      "desert_map_area",
-      "sun_nature_area",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -2804,10 +2590,6 @@
       "map",
       "cannot_be_twinned",
       "einharmaps",
-      "desert_area",
-      "god_boss_map_area",
-      "desert_map_area",
-      "sun_nature_area",
       "map_drops_can_upgrade_to_fortress"
     ]
   },
@@ -2822,53 +2604,7 @@
       "map",
       "cannot_be_twinned",
       "einharmaps",
-      "mine_area",
-      "god_boss_map_area",
       "map_drops_can_upgrade_to_ziggurat"
-    ]
-  },
-  {
-    "area_level": 80,
-    "boss_monster_ids": [],
-    "id": "LegionLeague",
-    "name": "Domain of Timeless Conflict",
-    "tags": [
-      "map",
-      "no_leaguestone",
-      "map_not_on_atlas"
-    ]
-  },
-  {
-    "area_level": 80,
-    "boss_monster_ids": [],
-    "id": "LegionLeague2",
-    "name": "Domain of Timeless Conflict",
-    "tags": [
-      "map",
-      "no_leaguestone",
-      "map_not_on_atlas"
-    ]
-  },
-  {
-    "area_level": 80,
-    "boss_monster_ids": [],
-    "id": "LegionLeague3",
-    "name": "Domain of Timeless Conflict",
-    "tags": [
-      "map",
-      "no_leaguestone",
-      "map_not_on_atlas"
-    ]
-  },
-  {
-    "area_level": 80,
-    "boss_monster_ids": [],
-    "id": "LegionLeague4",
-    "name": "Domain of Timeless Conflict",
-    "tags": [
-      "map",
-      "no_leaguestone",
-      "map_not_on_atlas"
     ]
   },
   {
@@ -2882,7 +2618,6 @@
       "indoors_area",
       "map",
       "unique_map",
-      "vaal_pyramid_area",
       "map_drops_can_upgrade_to_ziggurat"
     ]
   },
@@ -2905,9 +2640,6 @@
     "tags": [
       "map",
       "einharmaps",
-      "desert_area",
-      "desert_map_area",
-      "sun_nature_area",
       "map_drops_can_upgrade_to_citadel"
     ]
   },
@@ -2967,9 +2699,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "desert_area",
-      "desert_map_area",
-      "sun_nature_area",
       "map_drops_can_upgrade_to_fortress"
     ]
   },
@@ -2992,13 +2721,13 @@
     "boss_monster_ids": [
       "Brute/MapBossBrute"
     ],
-    "id": "Map2Tier1_2",
+    "id": "MapWorldsDungeon",
     "name": "Dungeon",
     "tags": [
       "indoors_area",
       "map",
       "einharmaps",
-      "prison_area"
+      "map_drops_can_upgrade_to_citadel"
     ]
   },
   {
@@ -3006,14 +2735,13 @@
     "boss_monster_ids": [
       "Brute/MapBossBrute"
     ],
-    "id": "MapWorldsDungeon",
+    "id": "Map2Tier1_2",
     "name": "Dungeon",
     "tags": [
       "indoors_area",
       "map",
       "einharmaps",
-      "prison_area",
-      "map_drops_can_upgrade_to_citadel"
+      "prison_area"
     ]
   },
   {
@@ -3117,11 +2845,6 @@
       "map",
       "no_echo",
       "einharmaps",
-      "fire_area",
-      "map_area_with_open_water",
-      "ocean_area",
-      "karui_map",
-      "sun_nature_area",
       "map_drops_can_upgrade_to_ziggurat"
     ]
   },
@@ -3155,8 +2878,6 @@
       "indoors_area",
       "map",
       "einharmaps",
-      "mine_area",
-      "cave_area",
       "map_drops_can_upgrade_to_ziggurat"
     ]
   },
@@ -3228,8 +2949,6 @@
       "indoors_area",
       "map",
       "einharmaps",
-      "warehouse_area",
-      "Forge_Area",
       "map_drops_can_upgrade_to_fortress"
     ]
   },
@@ -3264,11 +2983,6 @@
       "area_with_water",
       "cannot_be_twinned",
       "einharmaps",
-      "fields_area",
-      "has_foxes_area",
-      "crossroad_area",
-      "god_boss_map_area",
-      "sun_nature_area",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -3283,10 +2997,6 @@
       "indoors_area",
       "map",
       "einharmaps",
-      "mine_area",
-      "cave_area",
-      "flooded_area",
-      "golem_boss_area",
       "map_drops_can_upgrade_to_ziggurat"
     ]
   },
@@ -3353,11 +3063,7 @@
     "tags": [
       "map",
       "einharmaps",
-      "forest_map_area",
-      "dark_forest_area",
-      "snow_area",
       "cannot_be_twinned",
-      "triple_boss_map",
       "map_drops_can_upgrade_to_citadel"
     ]
   },
@@ -3441,9 +3147,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "map_area_with_open_water",
-      "river_area",
-      "bridge_area",
       "map_drops_can_upgrade_to_citadel"
     ]
   },
@@ -3475,9 +3178,6 @@
       "map",
       "delve_chest",
       "einharmaps",
-      "thaumaturgy_area",
-      "inventing_area",
-      "Forge_Area",
       "map_drops_can_upgrade_to_fortress"
     ]
   },
@@ -3492,8 +3192,6 @@
       "map",
       "no_echo",
       "einharmaps",
-      "snow_area",
-      "aqueduct_area",
       "map_drops_can_upgrade_to_ziggurat"
     ]
   },
@@ -3542,9 +3240,6 @@
       "map",
       "einharmaps",
       "indoors_area",
-      "cave_area",
-      "bandit_area",
-      "peaceful_map",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -3619,7 +3314,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "garden_area",
       "map_drops_can_upgrade_to_citadel"
     ]
   },
@@ -3677,9 +3371,6 @@
     "tags": [
       "map",
       "einharmaps",
-      "mine_area",
-      "chaos_golem_boss_area",
-      "golem_boss_area",
       "map_drops_can_upgrade_to_ziggurat"
     ]
   },
@@ -3738,9 +3429,6 @@
     "tags": [
       "map",
       "einharmaps",
-      "urban_sarn_area",
-      "slums_area",
-      "ruined_area",
       "map_drops_can_upgrade_to_citadel"
     ]
   },
@@ -3755,58 +3443,7 @@
       "map",
       "no_echo",
       "einharmaps",
-      "snow_area",
-      "goatman_boss_area",
-      "snow_mountain_area",
       "map_drops_can_upgrade_to_citadel"
-    ]
-  },
-  {
-    "area_level": 74,
-    "boss_monster_ids": [
-      "Goatman/GoatmanLeapSlamMapBoss"
-    ],
-    "id": "MapTier9_3",
-    "name": "Glacier",
-    "tags": [
-      "map",
-      "no_echo",
-      "einharmaps",
-      "snow_area",
-      "goatman_boss_area",
-      "snow_mountain_area"
-    ]
-  },
-  {
-    "area_level": 76,
-    "boss_monster_ids": [
-      "Goatman/GoatmanLeapSlamMapBoss"
-    ],
-    "id": "Map2Tier9_3",
-    "name": "Glacier",
-    "tags": [
-      "map",
-      "no_echo",
-      "einharmaps",
-      "snow_area",
-      "goatman_boss_area",
-      "snow_mountain_area"
-    ]
-  },
-  {
-    "area_level": 80,
-    "boss_monster_ids": [
-      "Goatman/GoatmanLeapSlamMapBoss"
-    ],
-    "id": "MapAtlasGorge",
-    "name": "Glacier",
-    "tags": [
-      "map",
-      "no_echo",
-      "einharmaps",
-      "snow_area",
-      "goatman_boss_area",
-      "snow_mountain_area"
     ]
   },
   {
@@ -3819,9 +3456,7 @@
     "tags": [
       "map",
       "area_with_water",
-      "graveyard_area",
       "einharmaps",
-      "cemetery_map_area",
       "map_drops_can_upgrade_to_ziggurat"
     ]
   },
@@ -3838,12 +3473,7 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "graveyard_area",
-      "rain_area",
-      "triple_boss_map",
       "cannot_be_twinned",
-      "cemetery_map_area",
-      "archer_boss_area",
       "map_drops_can_upgrade_to_sanctuary"
     ]
   },
@@ -3978,12 +3608,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "den_area",
-      "cave_area",
-      "chaos_golem_boss_area",
-      "golem_boss_area",
-      "crystalline_area",
-      "mine_area",
       "map_drops_can_upgrade_to_ziggurat"
     ]
   },
@@ -4060,10 +3684,6 @@
       "indoors_area",
       "map",
       "einharmaps",
-      "wealthy_area",
-      "kitava_cultist_area",
-      "blood_mage_boss_map",
-      "city_home_map",
       "map_drops_can_upgrade_to_sanctuary"
     ]
   },
@@ -4091,8 +3711,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "snow_area",
-      "bridge_area",
       "map_drops_can_upgrade_to_citadel"
     ]
   },
@@ -4107,9 +3725,6 @@
       "map",
       "cannot_be_twinned",
       "einharmaps",
-      "rain_area",
-      "bridge_area",
-      "god_boss_map_area",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -4153,8 +3768,6 @@
       "indoors_area",
       "map",
       "einharmaps",
-      "wealthy_area",
-      "church",
       "map_drops_can_upgrade_to_sanctuary"
     ]
   },
@@ -4217,11 +3830,6 @@
     "tags": [
       "map",
       "einharmaps",
-      "forest_map_area",
-      "jungle_valley_area",
-      "windy_area",
-      "spider_boss_area",
-      "sun_nature_area",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -4253,9 +3861,6 @@
       "map",
       "delve_chest",
       "einharmaps",
-      "wealthy_area",
-      "thaumaturgy_area",
-      "inventing_area",
       "map_drops_can_upgrade_to_fortress"
     ]
   },
@@ -4270,10 +3875,6 @@
       "map",
       "no_echo",
       "einharmaps",
-      "forest_map_area",
-      "den_area",
-      "cave_area",
-      "rigwald_area",
       "map_drops_can_upgrade_to_ziggurat"
     ]
   },
@@ -4343,9 +3944,6 @@
       "map",
       "delve_chest",
       "einharmaps",
-      "fire_area",
-      "fire_prison_area",
-      "sea_witch_boss_area",
       "map_drops_can_upgrade_to_fortress"
     ]
   },
@@ -4412,9 +4010,6 @@
       "area_with_water",
       "cannot_be_twinned",
       "einharmaps",
-      "fire_area",
-      "kitava_area",
-      "karui_map",
       "map_drops_can_upgrade_to_ziggurat"
     ]
   },
@@ -4430,9 +4025,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "rain_area",
-      "archer_boss_area",
-      "sun_nature_area",
       "map_drops_can_upgrade_to_fortress"
     ]
   },
@@ -4466,11 +4058,8 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "lighthouse_area",
-      "map_area_with_open_water",
-      "ocean_area",
-      "windy_area",
-      "map_drops_can_upgrade_to_ziggurat"
+      "map_drops_can_upgrade_to_ziggurat",
+      "lighthouse_area"
     ]
   },
   {
@@ -4504,8 +4093,6 @@
       "map",
       "delve_chest",
       "einharmaps",
-      "church",
-      "kitava_cultist_area",
       "map_drops_can_upgrade_to_sanctuary"
     ]
   },
@@ -4572,12 +4159,6 @@
       "unique_map",
       "map",
       "limited_tempests",
-      "area_with_water",
-      "map_area_with_open_water",
-      "ocean_area",
-      "gold_pile_area",
-      "merveil_area",
-      "sea_witch_boss_area",
       "map_drops_can_upgrade_to_citadel"
     ]
   },
@@ -4653,9 +4234,6 @@
       "indoors_area",
       "map",
       "einharmaps",
-      "belly_area",
-      "vile_areas",
-      "piety_area",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -4716,10 +4294,6 @@
     "tags": [
       "unique_map",
       "map",
-      "area_with_water",
-      "coast_boat_area",
-      "map_area_with_open_water",
-      "ocean_area",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -4750,9 +4324,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "fetid_area",
-      "toxic_pool_area",
-      "sun_nature_area",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -4784,7 +4355,6 @@
       "no_echo",
       "delve_chest",
       "einharmaps",
-      "mausoleum_area",
       "map_drops_can_upgrade_to_sanctuary"
     ]
   },
@@ -4799,7 +4369,6 @@
       "indoors_area",
       "map",
       "einharmaps",
-      "vaal_pyramid_area",
       "map_drops_can_upgrade_to_ziggurat"
     ]
   },
@@ -4906,9 +4475,6 @@
     "tags": [
       "map",
       "einharmaps",
-      "windy_area",
-      "bandit_area",
-      "sun_nature_area",
       "map_drops_can_upgrade_to_fortress"
     ]
   },
@@ -4923,12 +4489,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "flooded_area",
-      "gold_pile_area",
-      "sea_witch_boss_area",
-      "crystalline_area",
-      "bridge_area",
-      "sun_nature_area",
       "map_drops_can_upgrade_to_citadel"
     ]
   },
@@ -4963,8 +4523,6 @@
       "area_with_water",
       "delve_chest",
       "einharmaps",
-      "lunaris_area",
-      "church",
       "map_drops_can_upgrade_to_sanctuary"
     ]
   },
@@ -5027,9 +4585,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "fetid_area",
-      "mud_geyser_area",
-      "toxic_pool_area",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -5099,10 +4654,6 @@
       "map",
       "delve_chest",
       "einharmaps",
-      "library_area",
-      "relic_area",
-      "maligaro_area",
-      "unholy_trio_area",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -5139,13 +4690,13 @@
     "boss_monster_ids": [
       "Skeletons/SkeletonLargeMapBoss"
     ],
-    "id": "MapAtlasNecropolis",
+    "id": "MapWorldsNecropolis",
     "name": "Necropolis",
     "tags": [
       "indoors_area",
       "map",
       "einharmaps",
-      "necropolis_area"
+      "map_drops_can_upgrade_to_ziggurat"
     ]
   },
   {
@@ -5153,14 +4704,13 @@
     "boss_monster_ids": [
       "Skeletons/SkeletonLargeMapBoss"
     ],
-    "id": "MapWorldsNecropolis",
+    "id": "MapAtlasNecropolis",
     "name": "Necropolis",
     "tags": [
       "indoors_area",
       "map",
       "einharmaps",
-      "necropolis_area",
-      "map_drops_can_upgrade_to_ziggurat"
+      "necropolis_area"
     ]
   },
   {
@@ -5352,10 +4902,6 @@
       "map",
       "no_echo",
       "einharmaps",
-      "has_road_area",
-      "garden_area",
-      "labyrinth_tileset_area",
-      "sun_nature_area",
       "map_drops_can_upgrade_to_citadel"
     ]
   },
@@ -5407,7 +4953,6 @@
       "map",
       "cannot_be_twinned",
       "einharmaps",
-      "chamber_of_sins_area",
       "map_drops_can_upgrade_to_citadel"
     ]
   },
@@ -5507,10 +5052,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "chamber_of_sins_area",
-      "maligaro_area",
-      "unholy_trio_area",
-      "trio_soul_area",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -5531,6 +5072,23 @@
       "sceptre_of_god_area",
       "wealthy_area",
       "dominus_area"
+    ]
+  },
+  {
+    "area_level": 81,
+    "boss_monster_ids": [
+      "Pope/PopeMapBoss2",
+      "Dominusdemon/DominusDemonMapBoss"
+    ],
+    "id": "MapWorldsPalace",
+    "name": "Palace",
+    "tags": [
+      "indoors_area",
+      "map",
+      "no_echo",
+      "delve_chest",
+      "einharmaps",
+      "map_drops_can_upgrade_to_sanctuary"
     ]
   },
   {
@@ -5572,26 +5130,6 @@
     ]
   },
   {
-    "area_level": 81,
-    "boss_monster_ids": [
-      "Pope/PopeMapBoss2",
-      "Dominusdemon/DominusDemonMapBoss"
-    ],
-    "id": "MapWorldsPalace",
-    "name": "Palace",
-    "tags": [
-      "indoors_area",
-      "map",
-      "no_echo",
-      "delve_chest",
-      "einharmaps",
-      "sceptre_of_god_area",
-      "wealthy_area",
-      "dominus_area",
-      "map_drops_can_upgrade_to_sanctuary"
-    ]
-  },
-  {
     "area_level": 80,
     "boss_monster_ids": [
       "Statue/StatueChurchMapBoss"
@@ -5619,7 +5157,6 @@
       "map",
       "cannot_be_twinned",
       "einharmaps",
-      "prison_area",
       "map_drops_can_upgrade_to_citadel"
     ]
   },
@@ -5634,12 +5171,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "fields_area",
-      "map_area_with_open_water",
-      "ocean_area",
-      "golem_boss_area",
-      "peaceful_map",
-      "sun_nature_area",
       "map_drops_can_upgrade_to_fortress"
     ]
   },
@@ -5709,9 +5240,7 @@
       "perandus_leaguestone",
       "prophecy_leaguestone",
       "essence_leaguestone",
-      "breach_leaguestone",
-      "wealthy_area",
-      "city_home_map"
+      "breach_leaguestone"
     ]
   },
   {
@@ -5809,11 +5338,6 @@
       "indoors_area",
       "map",
       "einharmaps",
-      "belly_area",
-      "vile_areas",
-      "doedre_area",
-      "unholy_trio_area",
-      "doedre_map_area",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -5879,10 +5403,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "dock_area",
-      "map_area_with_open_water",
-      "ocean_area",
-      "undying_boss_area",
       "map_drops_can_upgrade_to_citadel"
     ]
   },
@@ -5896,7 +5416,6 @@
     "tags": [
       "map",
       "unique_map",
-      "desert_area",
       "map_drops_can_upgrade_to_fortress"
     ]
   },
@@ -5938,8 +5457,6 @@
     "tags": [
       "map",
       "einharmaps",
-      "daresso_area",
-      "pitfight_area",
       "map_drops_can_upgrade_to_fortress"
     ]
   },
@@ -5996,24 +5513,6 @@
     ]
   },
   {
-    "area_level": 75,
-    "boss_monster_ids": [
-      "Totems/TotemMapBossColdPlateau",
-      "Totems/TotemMapBossLightningPlateau"
-    ],
-    "id": "MapTier10_2",
-    "name": "Plateau",
-    "tags": [
-      "map",
-      "area_with_water",
-      "einharmaps",
-      "map_area_with_open_water",
-      "ocean_area",
-      "windy_area",
-      "totem_boss_area"
-    ]
-  },
-  {
     "area_level": 76,
     "boss_monster_ids": [
       "Totems/TotemMapBossColdPlateau",
@@ -6025,48 +5524,7 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "map_area_with_open_water",
-      "ocean_area",
-      "windy_area",
-      "totem_boss_area",
-      "sun_nature_area",
       "map_drops_can_upgrade_to_citadel"
-    ]
-  },
-  {
-    "area_level": 77,
-    "boss_monster_ids": [
-      "Totems/TotemMapBossColdPlateau",
-      "Totems/TotemMapBossLightningPlateau"
-    ],
-    "id": "Map2Tier10_2",
-    "name": "Plateau",
-    "tags": [
-      "map",
-      "area_with_water",
-      "einharmaps",
-      "map_area_with_open_water",
-      "ocean_area",
-      "windy_area",
-      "totem_boss_area"
-    ]
-  },
-  {
-    "area_level": 79,
-    "boss_monster_ids": [
-      "Totems/TotemMapBossColdPlateau",
-      "Totems/TotemMapBossLightningPlateau"
-    ],
-    "id": "MapAtlasPlateau",
-    "name": "Plateau",
-    "tags": [
-      "map",
-      "area_with_water",
-      "einharmaps",
-      "map_area_with_open_water",
-      "ocean_area",
-      "windy_area",
-      "totem_boss_area"
     ]
   },
   {
@@ -6108,7 +5566,6 @@
       "map",
       "no_echo",
       "einharmaps",
-      "labyrinth_tileset_area",
       "map_drops_can_upgrade_to_fortress"
     ]
   },
@@ -6166,6 +5623,22 @@
     "boss_monster_ids": [
       "DemonModular/DemonFemaleRangedMapBoss"
     ],
+    "id": "MapWorldsTempleUnique",
+    "name": "Poorjoy's Asylum",
+    "tags": [
+      "indoors_area",
+      "unique_map",
+      "map",
+      "limited_tempests",
+      "area_with_water",
+      "map_drops_can_upgrade_to_sanctuary"
+    ]
+  },
+  {
+    "area_level": 76,
+    "boss_monster_ids": [
+      "DemonModular/DemonFemaleRangedMapBoss"
+    ],
     "id": "MapAtlasTempleUnique",
     "name": "Poorjoy's Asylum",
     "tags": [
@@ -6176,24 +5649,6 @@
       "area_with_water",
       "thaumaturgy_area",
       "lunaris_blood_area"
-    ]
-  },
-  {
-    "area_level": 76,
-    "boss_monster_ids": [
-      "DemonModular/DemonFemaleRangedMapBoss"
-    ],
-    "id": "MapWorldsTempleUnique",
-    "name": "Poorjoy's Asylum",
-    "tags": [
-      "indoors_area",
-      "unique_map",
-      "map",
-      "limited_tempests",
-      "area_with_water",
-      "thaumaturgy_area",
-      "lunaris_blood_area",
-      "map_drops_can_upgrade_to_sanctuary"
     ]
   },
   {
@@ -6210,12 +5665,6 @@
     "tags": [
       "map",
       "einharmaps",
-      "marketplace_area",
-      "urban_sarn_area",
-      "dock_area",
-      "ocean_area",
-      "ruined_area",
-      "cannot_possess_boss",
       "map_drops_can_upgrade_to_fortress"
     ]
   },
@@ -6278,10 +5727,6 @@
     "tags": [
       "map",
       "einharmaps",
-      "urban_sarn_area",
-      "slums_area",
-      "ruined_area",
-      "rogue_exile_boss_area",
       "map_drops_can_upgrade_to_citadel"
     ]
   },
@@ -6407,8 +5852,6 @@
       "map",
       "cannot_be_twinned",
       "einharmaps",
-      "crystalline_area",
-      "bridge_area",
       "map_drops_can_upgrade_to_fortress"
     ]
   },
@@ -6437,7 +5880,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "toxic_pool_area",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -6510,11 +5952,6 @@
       "map",
       "delve_chest",
       "einharmaps",
-      "lunaris_outer_area",
-      "urban_sarn_area",
-      "parapet_area",
-      "rain_area",
-      "military_area",
       "map_drops_can_upgrade_to_fortress"
     ]
   },
@@ -6547,7 +5984,6 @@
       "map",
       "einharmaps",
       "arena_area",
-      "triple_boss_map",
       "map_drops_can_upgrade_to_fortress"
     ]
   },
@@ -6579,10 +6015,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "river_area",
-      "parapet_area",
-      "forest_map_area",
-      "undying_boss_area",
       "map_drops_can_upgrade_to_citadel"
     ]
   },
@@ -6658,12 +6090,6 @@
       "area_with_water",
       "cannot_be_twinned",
       "einharmaps",
-      "reef_area",
-      "ship_graveyard_area",
-      "map_area_with_open_water",
-      "ocean_area",
-      "king_boss_area",
-      "god_boss_map_area",
       "map_drops_can_upgrade_to_citadel"
     ]
   },
@@ -6679,9 +6105,6 @@
       "map",
       "delve_chest",
       "einharmaps",
-      "relic_area",
-      "mausoleum_area",
-      "wealthy_area",
       "map_drops_can_upgrade_to_sanctuary"
     ]
   },
@@ -6705,6 +6128,22 @@
     "boss_monster_ids": [
       "Undying/CityStalkerFemaleMapBoss"
     ],
+    "id": "MapWorldsResidence",
+    "name": "Residence",
+    "tags": [
+      "indoors_area",
+      "map",
+      "no_echo",
+      "delve_chest",
+      "einharmaps",
+      "map_drops_can_upgrade_to_sanctuary"
+    ]
+  },
+  {
+    "area_level": 74,
+    "boss_monster_ids": [
+      "Undying/CityStalkerFemaleMapBoss"
+    ],
     "id": "MapTier9_4",
     "name": "Residence",
     "tags": [
@@ -6718,28 +6157,6 @@
       "sceptre_of_god_area",
       "undying_boss_area",
       "city_home_map"
-    ]
-  },
-  {
-    "area_level": 74,
-    "boss_monster_ids": [
-      "Undying/CityStalkerFemaleMapBoss"
-    ],
-    "id": "MapWorldsResidence",
-    "name": "Residence",
-    "tags": [
-      "indoors_area",
-      "map",
-      "no_echo",
-      "delve_chest",
-      "einharmaps",
-      "tower_area",
-      "wealthy_area",
-      "sceptre_of_god_area",
-      "undying_boss_area",
-      "city_home_map",
-      "undyingcultist_map",
-      "map_drops_can_upgrade_to_sanctuary"
     ]
   },
   {
@@ -6839,7 +6256,8 @@
       "wealthy_area",
       "cannot_be_twinned",
       "catacomb_area",
-      "relic_area"
+      "relic_area",
+      "TheInnocent_area"
     ]
   },
   {
@@ -6868,9 +6286,6 @@
       "map",
       "delve_chest",
       "einharmaps",
-      "library_area",
-      "shavronne_area",
-      "unholy_trio_area",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -6934,11 +6349,6 @@
       "map",
       "delve_chest",
       "einharmaps",
-      "mausoleum_area",
-      "doedre_area",
-      "unholy_trio_area",
-      "trio_soul_area",
-      "doedre_map_area",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -6984,10 +6394,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "dock_area",
-      "rain_area",
-      "map_area_with_open_water",
-      "ocean_area",
       "map_drops_can_upgrade_to_fortress"
     ]
   },
@@ -7097,13 +6503,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "has_road_area",
-      "coast_boat_area",
-      "map_area_with_open_water",
-      "ocean_area",
-      "peaceful_map",
-      "karui_map",
-      "sun_nature_area",
       "map_drops_can_upgrade_to_ziggurat"
     ]
   },
@@ -7138,9 +6537,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "lunaris_blood_area",
-      "thaumaturgy_area",
-      "piety_area",
       "map_drops_can_upgrade_to_sanctuary"
     ]
   },
@@ -7192,10 +6588,6 @@
       "area_with_water",
       "cannot_be_twinned",
       "einharmaps",
-      "totem_boss_area",
-      "bridge_area",
-      "god_boss_map_area",
-      "city_home_map",
       "map_drops_can_upgrade_to_fortress"
     ]
   },
@@ -7210,10 +6602,7 @@
       "map",
       "einharmaps",
       "indoors_area",
-      "fire_area",
       "cannot_be_twinned",
-      "kitava_cultist_area",
-      "Forge_Area",
       "map_drops_can_upgrade_to_fortress"
     ]
   },
@@ -7278,11 +6667,6 @@
     "tags": [
       "map",
       "einharmaps",
-      "forest_map_area",
-      "bandit_area",
-      "alira_area",
-      "summoner_area",
-      "bandit_area",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -7319,13 +6703,13 @@
     "boss_monster_ids": [
       "Revenant/RevenantMapBoss"
     ],
-    "id": "MapAtlasSpiderLair_",
+    "id": "MapWorldsSpiderLair",
     "name": "Spider Lair",
     "tags": [
       "indoors_area",
       "map",
       "einharmaps",
-      "spider_boss_area"
+      "map_drops_can_upgrade_to_ziggurat"
     ]
   },
   {
@@ -7333,14 +6717,13 @@
     "boss_monster_ids": [
       "Revenant/RevenantMapBoss"
     ],
-    "id": "MapWorldsSpiderLair",
+    "id": "MapAtlasSpiderLair_",
     "name": "Spider Lair",
     "tags": [
       "indoors_area",
       "map",
       "einharmaps",
-      "spider_boss_area",
-      "map_drops_can_upgrade_to_ziggurat"
+      "spider_boss_area"
     ]
   },
   {
@@ -7368,12 +6751,18 @@
     "tags": [
       "map",
       "einharmaps",
-      "rain_area",
       "area_with_water",
-      "forest_map_area",
-      "toxic_pool_area",
       "map_drops_can_upgrade_to_abomination"
     ]
+  },
+  {
+    "area_level": 83,
+    "boss_monster_ids": [
+      "LeagueKalguur/VerisiumGuardBoss/VerisiumGuardBoss"
+    ],
+    "id": "SettlersBossFallenStar",
+    "name": "Starfall Crater",
+    "tags": []
   },
   {
     "area_level": 82,
@@ -7419,14 +6808,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "lightning_area",
-      "coast_boat_area",
-      "map_area_with_open_water",
-      "ocean_area",
-      "bandit_area",
-      "kraityn_area",
-      "karui_map",
-      "ship_graveyard_area",
       "map_drops_can_upgrade_to_fortress"
     ]
   },
@@ -7494,8 +6875,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "toxic_pool_area",
-      "sun_nature_area",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -7511,11 +6890,6 @@
       "map",
       "cannot_be_twinned",
       "einharmaps",
-      "snow_area",
-      "snow_mountain_area",
-      "windy_area",
-      "goatman_boss_area",
-      "god_boss_map_area",
       "map_drops_can_upgrade_to_sanctuary"
     ]
   },
@@ -7531,12 +6905,6 @@
       "area_with_water",
       "cannot_be_twinned",
       "einharmaps",
-      "has_foxes_area",
-      "ruined_vaal_city_area",
-      "spider_boss_area",
-      "god_boss_map_area",
-      "city_home_map",
-      "arakaali_area",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -7552,10 +6920,6 @@
       "area_with_water",
       "cannot_be_twinned",
       "einharmaps",
-      "totem_boss_area",
-      "bridge_area",
-      "god_boss_map_area",
-      "city_home_map",
       "map_drops_can_upgrade_to_fortress"
     ]
   },
@@ -7600,6 +6964,22 @@
     "boss_monster_ids": [
       "GuardianOfSolaris/GuardianOfSolarisMap"
     ],
+    "id": "MapWorldsTemple",
+    "name": "Temple",
+    "tags": [
+      "indoors_area",
+      "map",
+      "area_with_water",
+      "delve_chest",
+      "einharmaps",
+      "map_drops_can_upgrade_to_sanctuary"
+    ]
+  },
+  {
+    "area_level": 76,
+    "boss_monster_ids": [
+      "GuardianOfSolaris/GuardianOfSolarisMap"
+    ],
     "id": "MapAtlasTemple",
     "name": "Temple",
     "tags": [
@@ -7611,25 +6991,6 @@
       "solaris_area",
       "wealthy_area",
       "church"
-    ]
-  },
-  {
-    "area_level": 76,
-    "boss_monster_ids": [
-      "GuardianOfSolaris/GuardianOfSolarisMap"
-    ],
-    "id": "MapWorldsTemple",
-    "name": "Temple",
-    "tags": [
-      "indoors_area",
-      "map",
-      "area_with_water",
-      "delve_chest",
-      "einharmaps",
-      "solaris_area",
-      "wealthy_area",
-      "church",
-      "map_drops_can_upgrade_to_sanctuary"
     ]
   },
   {
@@ -7661,10 +7022,6 @@
       "no_echo",
       "cannot_be_twinned",
       "einharmaps",
-      "garden_area",
-      "high_gardens_area",
-      "god_boss_map_area",
-      "sun_nature_area",
       "map_drops_can_upgrade_to_sanctuary"
     ]
   },
@@ -7935,8 +7292,6 @@
       "prophecy_leaguestone",
       "essence_leaguestone",
       "breach_leaguestone",
-      "crypt_area",
-      "necromancer_area",
       "map_drops_can_upgrade_to_ziggurat"
     ]
   },
@@ -8090,9 +7445,6 @@
       "no_strongboxes",
       "unique_map",
       "no_leaguestone",
-      "doedre_area",
-      "unholy_trio_area",
-      "doedre_map_area",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -8157,7 +7509,8 @@
       "map_drops_can_upgrade_to_citadel",
       "map_drops_can_upgrade_to_fortress",
       "map_drops_can_upgrade_to_abomination",
-      "map_drops_can_upgrade_to_ziggurat"
+      "map_drops_can_upgrade_to_ziggurat",
+      "sceptre_of_god_area"
     ]
   },
   {
@@ -8316,10 +7669,6 @@
       "map",
       "area_with_water",
       "unique_map",
-      "solaris_area",
-      "lunaris_area",
-      "wealthy_area",
-      "church",
       "map_drops_can_upgrade_to_sanctuary"
     ]
   },
@@ -8342,8 +7691,6 @@
       "map",
       "limited_tempests",
       "area_with_water",
-      "lightning_area",
-      "rain_area",
       "map_drops_can_upgrade_to_citadel"
     ]
   },
@@ -8414,6 +7761,20 @@
     "boss_monster_ids": [
       "BloodChieftain/MapMonkeyChiefBloodEnrage2Simplified"
     ],
+    "id": "MapWorldsThicket",
+    "name": "Thicket",
+    "tags": [
+      "indoors_area",
+      "map",
+      "einharmaps",
+      "map_drops_can_upgrade_to_ziggurat"
+    ]
+  },
+  {
+    "area_level": 73,
+    "boss_monster_ids": [
+      "BloodChieftain/MapMonkeyChiefBloodEnrage2Simplified"
+    ],
     "id": "MapAtlasThicket",
     "name": "Thicket",
     "tags": [
@@ -8422,22 +7783,6 @@
       "einharmaps",
       "thicket_area",
       "forest_map_area"
-    ]
-  },
-  {
-    "area_level": 73,
-    "boss_monster_ids": [
-      "BloodChieftain/MapMonkeyChiefBloodEnrage2Simplified"
-    ],
-    "id": "MapWorldsThicket",
-    "name": "Thicket",
-    "tags": [
-      "indoors_area",
-      "map",
-      "einharmaps",
-      "thicket_area",
-      "forest_map_area",
-      "map_drops_can_upgrade_to_ziggurat"
     ]
   },
   {
@@ -8486,12 +7831,6 @@
       "cannot_be_twinned",
       "delve_chest",
       "einharmaps",
-      "tower_area",
-      "lightning_area",
-      "rain_area",
-      "shavronne_area",
-      "unholy_trio_area",
-      "city_home_map",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -8558,9 +7897,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "sewer_area",
-      "vile_areas",
-      "spider_boss_area",
       "map_drops_can_upgrade_to_ziggurat"
     ]
   },
@@ -8627,12 +7963,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "forest_map_area",
-      "tropical_island_area",
-      "map_area_with_open_water",
-      "ocean_area",
-      "peaceful_map",
-      "sun_nature_area",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -8756,7 +8086,6 @@
       "indoors_area",
       "map",
       "einharmaps",
-      "cave_area",
       "map_drops_can_upgrade_to_citadel"
     ]
   },
@@ -8787,11 +8116,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "flooded_area",
-      "cave_area",
-      "gold_pile_area",
-      "merveil_area",
-      "sea_witch_boss_area",
       "map_drops_can_upgrade_to_ziggurat"
     ]
   },
@@ -8964,7 +8288,6 @@
       "unique_map",
       "map",
       "limited_tempests",
-      "area_with_water",
       "no_strongboxes",
       "anarchy_leaguestone",
       "torment_leaguestone",
@@ -8976,8 +8299,7 @@
       "perandus_leaguestone",
       "prophecy_leaguestone",
       "essence_leaguestone",
-      "breach_leaguestone",
-      "map_area_with_open_water"
+      "breach_leaguestone"
     ]
   },
   {
@@ -9128,8 +8450,6 @@
       "indoors_area",
       "map",
       "einharmaps",
-      "vaal_pyramid_area",
-      "triple_boss_map",
       "map_drops_can_upgrade_to_ziggurat"
     ]
   },
@@ -9228,10 +8548,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "wealthy_area",
-      "gold_pile_area",
-      "golem_boss_area",
-      "inventing_area",
       "map_drops_can_upgrade_to_sanctuary"
     ]
   },
@@ -9324,9 +8640,6 @@
       "no_monster_packs",
       "vaults_of_atziri",
       "no_leaguestone",
-      "vaal_pyramid_area",
-      "wealthy_area",
-      "gold_pile_area",
       "map_drops_can_upgrade_to_ziggurat"
     ]
   },
@@ -9420,10 +8733,6 @@
       "map",
       "delve_chest",
       "einharmaps",
-      "sceptre_of_god_area",
-      "rain_area",
-      "wealthy_area",
-      "dominus_area",
       "map_drops_can_upgrade_to_sanctuary"
     ]
   },
@@ -9458,8 +8767,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "kaom_area",
-      "karui_map",
       "map_drops_can_upgrade_to_ziggurat"
     ]
   },
@@ -9564,11 +8871,6 @@
       "area_with_water",
       "cannot_be_twinned",
       "einharmaps",
-      "sewer_area",
-      "vile_areas",
-      "doedre_area",
-      "unholy_trio_area",
-      "doedre_map_area",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -9582,8 +8884,6 @@
     "tags": [
       "map",
       "einharmaps",
-      "wasteland_area",
-      "voll_area",
       "map_drops_can_upgrade_to_abomination"
     ]
   },
@@ -9642,9 +8942,6 @@
       "area_with_water",
       "delve_chest",
       "einharmaps",
-      "aqueduct_area",
-      "golem_boss_area",
-      "peaceful_map",
       "map_drops_can_upgrade_to_fortress"
     ]
   },
@@ -9694,12 +8991,6 @@
       "limited_tempests",
       "area_with_water",
       "domination_leaguestone",
-      "coast_boat_area",
-      "map_area_with_open_water",
-      "ocean_area",
-      "sea_witch_boss_area",
-      "rogue_exile_boss_area",
-      "ship_graveyard_area",
       "map_drops_can_upgrade_to_fortress"
     ]
   },
@@ -9829,11 +9120,6 @@
       "map",
       "area_with_water",
       "einharmaps",
-      "dock_area",
-      "rain_area",
-      "map_area_with_open_water",
-      "ocean_area",
-      "golem_boss_area",
       "map_drops_can_upgrade_to_fortress"
     ]
   },

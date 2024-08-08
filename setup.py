@@ -9,7 +9,7 @@ URL = "https://github.com/Liberatorist/RePoE"
 EMAIL = ""
 AUTHOR = "Liberatorist"
 REQUIRES_PYTHON = ">=3.11.0"
-VERSION = "3.24.6"
+VERSION = "3.25.0"
 
 # What packages are required for this module to be executed?
 REQUIRED = []

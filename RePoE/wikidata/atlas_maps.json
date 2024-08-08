@@ -12,10 +12,6 @@
     "tier": 11
   },
   {
-    "name": "Acton's Nightmare",
-    "tier": 3
-  },
-  {
     "name": "Arachnid Nest",
     "tier": 10
   },
@@ -216,10 +212,6 @@
     "tier": 10
   },
   {
-    "name": "Hallowed Ground",
-    "tier": 4
-  },
-  {
     "name": "Iceberg",
     "tier": 2
   },
@@ -246,10 +238,6 @@
   {
     "name": "Lookout",
     "tier": 9
-  },
-  {
-    "name": "Maelstr\u00f6m of Chaos",
-    "tier": 5
   },
   {
     "name": "Mausoleum",
@@ -388,26 +376,6 @@
     "tier": 11
   },
   {
-    "name": "Synthesised World",
-    "tier": 11
-  },
-  {
-    "name": "Synthesised World",
-    "tier": 11
-  },
-  {
-    "name": "Synthesised World",
-    "tier": 11
-  },
-  {
-    "name": "Synthesised World",
-    "tier": 11
-  },
-  {
-    "name": "Synthesised World",
-    "tier": 11
-  },
-  {
     "name": "Temple",
     "tier": 14
   },
@@ -421,14 +389,6 @@
   },
   {
     "name": "The Beachhead",
-    "tier": 5
-  },
-  {
-    "name": "The Beachhead",
-    "tier": 10
-  },
-  {
-    "name": "The Beachhead",
     "tier": 10
   },
   {
@@ -437,31 +397,11 @@
   },
   {
     "name": "The Beachhead",
-    "tier": 15
-  },
-  {
-    "name": "The Beachhead",
     "tier": 16
-  },
-  {
-    "name": "The Beachhead",
-    "tier": 16
-  },
-  {
-    "name": "The Coward's Trial",
-    "tier": 7
-  },
-  {
-    "name": "The Putrid Cloister",
-    "tier": 12
   },
   {
     "name": "The Tower of Ordeals",
     "tier": 16
-  },
-  {
-    "name": "The Twilight Temple",
-    "tier": 4
   },
   {
     "name": "Thicket",
@@ -488,10 +428,6 @@
     "tier": 10
   },
   {
-    "name": "Underground Sea",
-    "tier": 10
-  },
-  {
     "name": "Vaal Pyramid",
     "tier": 4
   },
@@ -502,10 +438,6 @@
   {
     "name": "Vault",
     "tier": 15
-  },
-  {
-    "name": "Vaults of Atziri",
-    "tier": 4
   },
   {
     "name": "Volcano",
@@ -522,10 +454,6 @@
   {
     "name": "Waterways",
     "tier": 6
-  },
-  {
-    "name": "Whakawairua Tuahu",
-    "tier": 3
   },
   {
     "name": "Wharf",

@@ -5182,6 +5182,26 @@
         "index_handlers": [
           []
         ],
+        "string": "+{0}% chance to Block Attack Damage while Dual Wielding"
+      }
+    ],
+    "hidden": true,
+    "ids": [
+      "inherent_block_while_dual_wielding_%"
+    ]
+  },
+  {
+    "English": [
+      {
+        "condition": [
+          {}
+        ],
+        "format": [
+          "#"
+        ],
+        "index_handlers": [
+          []
+        ],
         "string": "{0}% more Attack Physical Damage while Dual Wielding"
       }
     ],
@@ -6210,7 +6230,7 @@
         "index_handlers": [
           []
         ],
-        "string": "Item has 6 Sockets and is fully linked"
+        "string": "Has 6 Linked Sockets"
       }
     ],
     "hidden": true,
@@ -6230,7 +6250,7 @@
         "index_handlers": [
           []
         ],
-        "string": "Item has 6 White Sockets and is fully linked"
+        "string": "Has 6 Linked White Sockets"
       }
     ],
     "hidden": true,
@@ -6270,7 +6290,7 @@
         "index_handlers": [
           []
         ],
-        "string": "Item has no level requirement and Energy Shield"
+        "string": "Has no Attribute Requirements or Energy Shield"
       }
     ],
     "hidden": true,

@@ -100,24 +100,12 @@
     "name": "&lt;&lt;hbgm01&gt;&gt;"
   },
   {
-    "metadata_id": "Avatar/Avatar10",
-    "name": "&lt;&lt;HRB10&gt;&gt;"
-  },
-  {
-    "metadata_id": "Avatar/Avatar11",
-    "name": "&lt;&lt;HRB11&gt;&gt;"
-  },
-  {
     "metadata_id": "Avatar/Avatar11SummonedDelve",
     "name": "&lt;&lt;HRB11&gt;&gt;"
   },
   {
     "metadata_id": "Avatar/Avatar11Summoned_",
     "name": "&lt;&lt;HRB11&gt;&gt;"
-  },
-  {
-    "metadata_id": "Avatar/Avatar12",
-    "name": "&lt;&lt;HRB12&gt;&gt;"
   },
   {
     "metadata_id": "Avatar/Avatar12Summoned",
@@ -128,20 +116,12 @@
     "name": "&lt;&lt;HRB12&gt;&gt;"
   },
   {
-    "metadata_id": "Avatar/Avatar13",
-    "name": "&lt;&lt;HRB13&gt;&gt;"
-  },
-  {
     "metadata_id": "Avatar/Avatar13Summoned",
     "name": "&lt;&lt;HRB13&gt;&gt;"
   },
   {
     "metadata_id": "Avatar/Avatar13SummonedDelve",
     "name": "&lt;&lt;HRB13&gt;&gt;"
-  },
-  {
-    "metadata_id": "Avatar/Avatar14",
-    "name": "&lt;&lt;HRB14&gt;&gt;"
   },
   {
     "metadata_id": "Avatar/Avatar14Summoned",
@@ -152,20 +132,12 @@
     "name": "&lt;&lt;HRB14&gt;&gt;"
   },
   {
-    "metadata_id": "Avatar/Avatar15",
-    "name": "&lt;&lt;HRB15&gt;&gt;"
-  },
-  {
     "metadata_id": "Avatar/Avatar15Summoned",
     "name": "&lt;&lt;HRB15&gt;&gt;"
   },
   {
     "metadata_id": "Avatar/Avatar15SummonedDelve",
     "name": "&lt;&lt;HRB15&gt;&gt;"
-  },
-  {
-    "metadata_id": "Avatar/Avatar16",
-    "name": "&lt;&lt;HRB16&gt;&gt;"
   },
   {
     "metadata_id": "Avatar/Avatar16Summoned",
@@ -176,20 +148,12 @@
     "name": "&lt;&lt;HRB16&gt;&gt;"
   },
   {
-    "metadata_id": "Avatar/Avatar17",
-    "name": "&lt;&lt;HRB17&gt;&gt;"
-  },
-  {
     "metadata_id": "Avatar/Avatar17Summoned",
     "name": "&lt;&lt;HRB17&gt;&gt;"
   },
   {
     "metadata_id": "Avatar/Avatar17SummonedDelve",
     "name": "&lt;&lt;HRB17&gt;&gt;"
-  },
-  {
-    "metadata_id": "Avatar/Avatar18",
-    "name": "&lt;&lt;HRB18&gt;&gt;"
   },
   {
     "metadata_id": "Avatar/Avatar18Summoned",
@@ -200,10 +164,6 @@
     "name": "&lt;&lt;HRB18&gt;&gt;"
   },
   {
-    "metadata_id": "Avatar/Avatar19",
-    "name": "&lt;&lt;HRB19&gt;&gt;"
-  },
-  {
     "metadata_id": "Avatar/Avatar19Summoned",
     "name": "&lt;&lt;HRB19&gt;&gt;"
   },
@@ -212,48 +172,8 @@
     "name": "&lt;&lt;HRB19&gt;&gt;"
   },
   {
-    "metadata_id": "Avatar/Avatar1",
-    "name": "&lt;&lt;HRB1&gt;&gt;"
-  },
-  {
     "metadata_id": "Avatar/AvatarAtlasMinion1",
     "name": "&lt;&lt;HRB1&gt;&gt;"
-  },
-  {
-    "metadata_id": "Avatar/Avatar20",
-    "name": "&lt;&lt;HRB20&gt;&gt;"
-  },
-  {
-    "metadata_id": "Avatar/Avatar21",
-    "name": "&lt;&lt;HRB21&gt;&gt;"
-  },
-  {
-    "metadata_id": "Avatar/Avatar22",
-    "name": "&lt;&lt;HRB22&gt;&gt;"
-  },
-  {
-    "metadata_id": "Avatar/Avatar23",
-    "name": "&lt;&lt;HRB23&gt;&gt;"
-  },
-  {
-    "metadata_id": "Avatar/Avatar24_",
-    "name": "&lt;&lt;HRB24&gt;&gt;"
-  },
-  {
-    "metadata_id": "Avatar/Avatar25",
-    "name": "&lt;&lt;HRB25&gt;&gt;"
-  },
-  {
-    "metadata_id": "Avatar/Avatar26",
-    "name": "&lt;&lt;HRB26&gt;&gt;"
-  },
-  {
-    "metadata_id": "Avatar/Avatar27",
-    "name": "&lt;&lt;HRB27&gt;&gt;"
-  },
-  {
-    "metadata_id": "Avatar/Avatar28",
-    "name": "&lt;&lt;HRB28&gt;&gt;"
   },
   {
     "metadata_id": "Totems/HarbingerTotem1",
@@ -264,68 +184,28 @@
     "name": "&lt;&lt;HRB29&gt;&gt;"
   },
   {
-    "metadata_id": "Avatar/Avatar2",
-    "name": "&lt;&lt;HRB2&gt;&gt;"
-  },
-  {
     "metadata_id": "Avatar/AvatarAtlasMinion2",
     "name": "&lt;&lt;HRB2&gt;&gt;"
-  },
-  {
-    "metadata_id": "Avatar/AvatarBossAtlas",
-    "name": "&lt;&lt;HRB30&gt;&gt;"
-  },
-  {
-    "metadata_id": "Avatar/AvatarBossAtlasSupporter_",
-    "name": "&lt;&lt;HRB30&gt;&gt;"
   },
   {
     "metadata_id": "Avatar/AvatarSummonedBoss",
     "name": "&lt;&lt;HRB30&gt;&gt;"
   },
   {
-    "metadata_id": "Avatar/Avatar3_",
-    "name": "&lt;&lt;HRB3&gt;&gt;"
-  },
-  {
     "metadata_id": "Avatar/AvatarAtlasMinion3",
     "name": "&lt;&lt;HRB3&gt;&gt;"
-  },
-  {
-    "metadata_id": "Avatar/Avatar4",
-    "name": "&lt;&lt;HRB4&gt;&gt;"
   },
   {
     "metadata_id": "Avatar/AvatarAtlasMinion4",
     "name": "&lt;&lt;HRB4&gt;&gt;"
   },
   {
-    "metadata_id": "Avatar/Avatar5",
-    "name": "&lt;&lt;HRB5&gt;&gt;"
-  },
-  {
     "metadata_id": "Avatar/AvatarAtlasMinion5",
     "name": "&lt;&lt;HRB5&gt;&gt;"
   },
   {
-    "metadata_id": "Avatar/Avatar6",
-    "name": "&lt;&lt;HRB6&gt;&gt;"
-  },
-  {
     "metadata_id": "Avatar/AvatarAtlasMinion6",
     "name": "&lt;&lt;HRB6&gt;&gt;"
-  },
-  {
-    "metadata_id": "Avatar/Avatar7",
-    "name": "&lt;&lt;HRB7&gt;&gt;"
-  },
-  {
-    "metadata_id": "Avatar/Avatar8",
-    "name": "&lt;&lt;HRB8&gt;&gt;"
-  },
-  {
-    "metadata_id": "Avatar/Avatar9",
-    "name": "&lt;&lt;HRB9&gt;&gt;"
   },
   {
     "metadata_id": "DemonBosses/DemonBoss3/DemonBoss3",
@@ -474,6 +354,10 @@
   {
     "metadata_id": "LeagueHeist/Boss/AdmiralDarnaw",
     "name": "Admiral Darnaw"
+  },
+  {
+    "metadata_id": "LeagueKalguur/DarnawPirateRaider/PirateCoveBoss",
+    "name": "Admiral Valerius"
   },
   {
     "metadata_id": "Spiders/SpiderBarrelOfSpidersMedium",
@@ -1064,6 +948,10 @@
     "name": "Animated Weapon"
   },
   {
+    "metadata_id": "AnimatedItem/AnimatedWeaponHolyElderAttachedLeft",
+    "name": "Animated Weapon"
+  },
+  {
     "metadata_id": "AnimatedItem/AnimatedWeaponHolyElderAttachedRight",
     "name": "Animated Weapon"
   },
@@ -1214,6 +1102,10 @@
   {
     "metadata_id": "VaalSpiderGod/ArakaaliStandalone",
     "name": "Arakaali, Spinner of Shadows"
+  },
+  {
+    "metadata_id": "LeagueBlight/BlightTowerArcingRank4",
+    "name": "Arc Tower"
   },
   {
     "metadata_id": "LeagueBlight/BlightTowerArcing_",
@@ -1380,14 +1272,6 @@
     "name": "Arteth, Selenia's Herald"
   },
   {
-    "metadata_id": "LeagueHeist/Thug/ThugRanged1Elite",
-    "name": "Artless Assassin"
-  },
-  {
-    "metadata_id": "LeagueHeist/Thug/ThugRanged1EliteGuard",
-    "name": "Artless Assassin"
-  },
-  {
     "metadata_id": "TemplarSlaveDriver/TemplarSlaveDriverBossMap",
     "name": "Arwyn, the Houndmaster"
   },
@@ -1446,10 +1330,6 @@
   {
     "metadata_id": "Necromancer/NecromancerFlammability2Hellscape",
     "name": "Ash Prophet"
-  },
-  {
-    "metadata_id": "LeagueHeist/Robot/RobotPyreKnightElite",
-    "name": "Ashblessed Warden"
   },
   {
     "metadata_id": "GhostPirates/GhostPirateBlack",
@@ -1569,6 +1449,10 @@
   },
   {
     "metadata_id": "Atziri/AtziriLightning",
+    "name": "Atziri, Queen of the Vaal"
+  },
+  {
+    "metadata_id": "Atziri/AtziriLightning2",
     "name": "Atziri, Queen of the Vaal"
   },
   {
@@ -1900,10 +1784,6 @@
     "name": "Auriot, Prospero's Furnace Guardian"
   },
   {
-    "metadata_id": "LeagueHeist/Robot/RobotAutomatonElite",
-    "name": "Auto-Enforcer"
-  },
-  {
     "metadata_id": "LeagueCrucible/Chaos/BoneGolemBoss",
     "name": "Autonomir, Reaver of Drones"
   },
@@ -2133,6 +2013,10 @@
   },
   {
     "metadata_id": "Skeletons/SkeletonMeleeAzmeri",
+    "name": "Azmeri Ancestor"
+  },
+  {
+    "metadata_id": "Skeletons/SkeletonMeleeAzmeri2",
     "name": "Azmeri Ancestor"
   },
   {
@@ -3852,10 +3736,6 @@
     "name": "Brin Barius"
   },
   {
-    "metadata_id": "LeagueBetrayal/BetrayalDjinnMemberMelee4_",
-    "name": "Brin Barius"
-  },
-  {
     "metadata_id": "WaterElemental/WaterElementalVortexOnDeath",
     "name": "Brine Princess"
   },
@@ -4860,11 +4740,23 @@
     "name": "Chilling Tower Mk I"
   },
   {
+    "metadata_id": "LeagueBlight/BlightTowerChillingRank1",
+    "name": "Chilling Tower Mk I"
+  },
+  {
     "metadata_id": "LeagueBlight/BlightTowerChilling2",
     "name": "Chilling Tower Mk II"
   },
   {
+    "metadata_id": "LeagueBlight/BlightTowerChillingRank2",
+    "name": "Chilling Tower Mk II"
+  },
+  {
     "metadata_id": "LeagueBlight/BlightTowerChilling3",
+    "name": "Chilling Tower Mk III"
+  },
+  {
+    "metadata_id": "LeagueBlight/BlightTowerChillingRank3",
     "name": "Chilling Tower Mk III"
   },
   {
@@ -5014,14 +4906,6 @@
   {
     "metadata_id": "LeagueBlight/Generic/NessaCrabBoss",
     "name": "Clobberclaw"
-  },
-  {
-    "metadata_id": "LeagueHeist/Robot/RobotSpider",
-    "name": "Clockwork Crawler"
-  },
-  {
-    "metadata_id": "LeagueHeist/Robot/RobotSkitterbot",
-    "name": "Clockwork Sentry"
   },
   {
     "metadata_id": "Clone/DuelistClone",
@@ -5345,6 +5229,10 @@
   },
   {
     "metadata_id": "ParasiticSquid/ParasiticSquidAbyssDelve",
+    "name": "Corpse Thief"
+  },
+  {
+    "metadata_id": "ParasiticSquid/ParasiticSquidAbyssStandalone",
     "name": "Corpse Thief"
   },
   {
@@ -5778,14 +5666,6 @@
   {
     "metadata_id": "Skeletons/Scarecrow/ScarecrowFarmerSkeletonChampionHellscape",
     "name": "Crow Keeper"
-  },
-  {
-    "metadata_id": "LeagueHeist/Thug/ThugTorch1",
-    "name": "Cruel Arsonist"
-  },
-  {
-    "metadata_id": "LeagueHeist/Thug/ThugTorch1Guard",
-    "name": "Cruel Arsonist"
   },
   {
     "metadata_id": "Bull/BullMapBoss",
@@ -6312,10 +6192,6 @@
     "name": "Daemon"
   },
   {
-    "metadata_id": "LeagueHeist/Thug/ThugTrapperGridDaemon",
-    "name": "Daemon"
-  },
-  {
     "metadata_id": "LeagueRitual/VaalAtziriDaemonAtlas",
     "name": "Daemon"
   },
@@ -6592,6 +6468,10 @@
     "name": "Deep Stalker"
   },
   {
+    "metadata_id": "Monkeys/FlameBearerAbyssStandalone",
+    "name": "Deep Stalker"
+  },
+  {
     "metadata_id": "MossMonster/MossMonsterEmergeEncounterBoss",
     "name": "Deepcrush Ancient"
   },
@@ -6749,10 +6629,6 @@
   },
   {
     "metadata_id": "ZombieDismember/ZombieMoldyEmerge4Hellscape",
-    "name": "Devout Dead"
-  },
-  {
-    "metadata_id": "ZombieDismember/ZombieMoldyEmerge4Standalone",
     "name": "Devout Dead"
   },
   {
@@ -6954,6 +6830,14 @@
   {
     "metadata_id": "Masters/SanctumNPC",
     "name": "Divinia"
+  },
+  {
+    "metadata_id": "Daemon/CardDaemon/CardMonster",
+    "name": "Divinitus Oracular"
+  },
+  {
+    "metadata_id": "Daemon/CardDaemon/BookMonster",
+    "name": "Divinitus Profundus"
   },
   {
     "metadata_id": "Axis/AxisExperimenterBossInvasion",
@@ -7854,10 +7738,6 @@
   {
     "metadata_id": "UniqueMapExiles/ScionExileBowTwin",
     "name": "Elusive Twin"
-  },
-  {
-    "metadata_id": "LeagueHeist/Robot/RobotClockworkGolem",
-    "name": "Ember Auto-Scout"
   },
   {
     "metadata_id": "Skeletons/SkeletonMeleeFireLabyrinthSummoned",
@@ -8988,11 +8868,23 @@
     "name": "Fireball Tower Mk I"
   },
   {
+    "metadata_id": "LeagueBlight/BlightTowerFlameRank1",
+    "name": "Fireball Tower Mk I"
+  },
+  {
     "metadata_id": "LeagueBlight/BlightTowerFlame2",
     "name": "Fireball Tower Mk II"
   },
   {
+    "metadata_id": "LeagueBlight/BlightTowerFlameRank2",
+    "name": "Fireball Tower Mk II"
+  },
+  {
     "metadata_id": "LeagueBlight/BlightTowerFlame3",
+    "name": "Fireball Tower Mk III"
+  },
+  {
+    "metadata_id": "LeagueBlight/BlightTowerFlameRank3",
     "name": "Fireball Tower Mk III"
   },
   {
@@ -9002,14 +8894,6 @@
   {
     "metadata_id": "LeagueAncestral/AncestralNgamahuDrunkStandalone",
     "name": "Firebreather"
-  },
-  {
-    "metadata_id": "LeagueHeist/Robot/RobotDrone",
-    "name": "Firebuzz"
-  },
-  {
-    "metadata_id": "LeagueHeist/Robot/RobotTotem",
-    "name": "Firespout"
   },
   {
     "metadata_id": "GhostPirates/GhostPirateMapBoss1",
@@ -9193,6 +9077,10 @@
   },
   {
     "metadata_id": "LeagueBlight/BlightTowerFlamethrower",
+    "name": "Flamethrower Tower"
+  },
+  {
+    "metadata_id": "LeagueBlight/BlightTowerFlamethrowerRank4",
     "name": "Flamethrower Tower"
   },
   {
@@ -9616,42 +9504,6 @@
     "name": "Fossil Eater"
   },
   {
-    "metadata_id": "LeagueHeist/Thug/ThugMelee1",
-    "name": "Foul Thug"
-  },
-  {
-    "metadata_id": "LeagueHeist/Thug/ThugMelee1Guard",
-    "name": "Foul Thug"
-  },
-  {
-    "metadata_id": "LeagueHeist/Thug/ThugMelee2",
-    "name": "Foul Thug"
-  },
-  {
-    "metadata_id": "LeagueHeist/Thug/ThugMelee2Guard",
-    "name": "Foul Thug"
-  },
-  {
-    "metadata_id": "LeagueHeist/Thug/ThugMelee3",
-    "name": "Foul Thug"
-  },
-  {
-    "metadata_id": "LeagueHeist/Thug/ThugMelee3Guard",
-    "name": "Foul Thug"
-  },
-  {
-    "metadata_id": "LeagueHeist/Thug/ThugMelee4",
-    "name": "Foul Thug"
-  },
-  {
-    "metadata_id": "LeagueHeist/Thug/ThugMelee4Assassinated",
-    "name": "Foul Thug"
-  },
-  {
-    "metadata_id": "LeagueHeist/Thug/ThugMelee4Guard",
-    "name": "Foul Thug"
-  },
-  {
     "metadata_id": "LeagueSynthesis/SynthesisGolemBoss",
     "name": "Fractal Gargantuan"
   },
@@ -9681,6 +9533,10 @@
   },
   {
     "metadata_id": "LeagueBlight/BlightTowerFreezing",
+    "name": "Freezebolt Tower"
+  },
+  {
+    "metadata_id": "LeagueBlight/BlightTowerFreezingRank4",
     "name": "Freezebolt Tower"
   },
   {
@@ -9812,10 +9668,6 @@
     "name": "Frost Archmage"
   },
   {
-    "metadata_id": "LeagueHeist/Robot/RobotClockworkGolemCold",
-    "name": "Frost Auto-Scout"
-  },
-  {
     "metadata_id": "Skeletons/SkeletonCasterCold3",
     "name": "Frost Bishop"
   },
@@ -9912,10 +9764,6 @@
     "name": "Frosted Cogwork"
   },
   {
-    "metadata_id": "LeagueHeist/Robot/RobotTotemCold",
-    "name": "Frostspout"
-  },
-  {
     "metadata_id": "Skeletons/LabyrinthLieutenantSkeletonMeleeMinion",
     "name": "Frozen Builder"
   },
@@ -9974,10 +9822,6 @@
   {
     "metadata_id": "Spiker/SpikerBull/SpikerBullBossStandalone",
     "name": "Gazuul, Droughtspawn"
-  },
-  {
-    "metadata_id": "LeagueHeist/Robot/RobotForgeHoundElite",
-    "name": "GDB0-Y"
   },
   {
     "metadata_id": "LeagueDelve/LavaFossilEncounter/DelveLavaGargoyleBoss",
@@ -10285,6 +10129,10 @@
   },
   {
     "metadata_id": "LeagueBlight/BlightTowerIcePrison",
+    "name": "Glacial Cage Tower"
+  },
+  {
+    "metadata_id": "LeagueBlight/BlightTowerIcePrisonRank4",
     "name": "Glacial Cage Tower"
   },
   {
@@ -10832,10 +10680,6 @@
     "name": "Haku"
   },
   {
-    "metadata_id": "LeagueAzmeri/SpecialCorpses/SynthesisGolemMid",
-    "name": "Half-remembered Goliath"
-  },
-  {
     "metadata_id": "Handfinger/HandfingerBoss",
     "name": "Hammerstorm"
   },
@@ -11244,10 +11088,6 @@
     "name": "Huitepa the Blind"
   },
   {
-    "metadata_id": "LeagueAzmeri/SpecialCorpses/RobotArgusMid",
-    "name": "Hulking Miscreation"
-  },
-  {
     "metadata_id": "Totems/StrMissionBallLightningTotem",
     "name": "Humming Totem"
   },
@@ -11462,10 +11302,6 @@
   {
     "metadata_id": "LeagueAzmeri/SpecialCorpses/TigerLow",
     "name": "Imperfect Forest Tiger"
-  },
-  {
-    "metadata_id": "LeagueAzmeri/SpecialCorpses/RobotArgusLow",
-    "name": "Imperfect Hulking Miscreation"
   },
   {
     "metadata_id": "LeagueAzmeri/SpecialCorpses/CasterDemonLow",
@@ -11721,10 +11557,6 @@
   },
   {
     "metadata_id": "DropBear/DropBearGround3Parasite_",
-    "name": "Infested Ursa"
-  },
-  {
-    "metadata_id": "DropBear/DropBearGroundSpawn3Parasite",
     "name": "Infested Ursa"
   },
   {
@@ -12888,10 +12720,6 @@
     "name": "Kuto, Hired Muscle"
   },
   {
-    "metadata_id": "LeagueHeist/Science/ScientistLabRat",
-    "name": "Lab Rat"
-  },
-  {
     "metadata_id": "LeagueHeist/Science/ScientistLabrador",
     "name": "Labora-dor"
   },
@@ -13150,6 +12978,10 @@
   {
     "metadata_id": "LightningOrb/ShavronneLightningOrb",
     "name": "Lightning Orb"
+  },
+  {
+    "metadata_id": "LeagueBlight/BlightTowerLightningStormRank4",
+    "name": "Lightning Storm Tower"
   },
   {
     "metadata_id": "LeagueBlight/BlightTowerLightningStorm_",
@@ -13630,22 +13462,6 @@
   {
     "metadata_id": "LeagueAffliction/AfflictionMinion4",
     "name": "Malice"
-  },
-  {
-    "metadata_id": "LeagueHeist/Thug/ThugMelee2Elite",
-    "name": "Malicious Bruiser"
-  },
-  {
-    "metadata_id": "LeagueHeist/Thug/ThugMelee2EliteGuard",
-    "name": "Malicious Bruiser"
-  },
-  {
-    "metadata_id": "LeagueHeist/Thug/ThugMelee4Elite",
-    "name": "Malicious Bruiser"
-  },
-  {
-    "metadata_id": "LeagueHeist/Thug/ThugMelee4EliteGuard",
-    "name": "Malicious Bruiser"
   },
   {
     "metadata_id": "Maligaro/MaligaroSoulClone1Map",
@@ -14300,6 +14116,10 @@
     "name": "Meteor Tower"
   },
   {
+    "metadata_id": "LeagueBlight/BlightTowerMeteorRank4",
+    "name": "Meteor Tower"
+  },
+  {
     "metadata_id": "DaressoExiles/ExileArenaWitch",
     "name": "Mevia"
   },
@@ -14462,14 +14282,6 @@
   {
     "metadata_id": "DemonModular/DemonModularTowerPortal",
     "name": "Miscreation"
-  },
-  {
-    "metadata_id": "LeagueHeist/Thug/ThugRanged1Guard_",
-    "name": "Miserly Poacher"
-  },
-  {
-    "metadata_id": "LeagueHeist/Thug/ThugRanged1_",
-    "name": "Miserly Poacher"
   },
   {
     "metadata_id": "LeagueBlight/Minion/BlightMinionSpiderFastMother",
@@ -14694,6 +14506,10 @@
   {
     "metadata_id": "DropBear/DexMissionDropBearBoss",
     "name": "Mutated Ursa"
+  },
+  {
+    "metadata_id": "Squid/DexMissionSquidBoss",
+    "name": "Mutated Watcher"
   },
   {
     "metadata_id": "Squid/DexMissionSquidBoss",
@@ -15280,6 +15096,10 @@
     "name": "Null Portal"
   },
   {
+    "metadata_id": "BanditLeaderStrDex/BanditLeaderOak",
+    "name": "Oak"
+  },
+  {
     "metadata_id": "BanditLeaderStrDex/BanditLeaderOakEndlessLedge",
     "name": "Oak"
   },
@@ -15322,10 +15142,6 @@
   {
     "metadata_id": "Bandits/BanditGuardBowSpawner",
     "name": "Oak's Guardian"
-  },
-  {
-    "metadata_id": "BanditLeaderStrDex/BanditLeaderOak",
-    "name": "Oak, Skullbreaker"
   },
   {
     "metadata_id": "BanditLeaderStrDex/BanditLeaderOakStandalone",
@@ -15906,14 +15722,6 @@
   {
     "metadata_id": "LeagueAzmeri/SpecialCorpses/VikingHigh",
     "name": "Perfect Forest Warrior"
-  },
-  {
-    "metadata_id": "LeagueAzmeri/SpecialCorpses/SynthesisGolemHigh",
-    "name": "Perfect Half-remembered Goliath"
-  },
-  {
-    "metadata_id": "LeagueAzmeri/SpecialCorpses/RobotArgusHigh__",
-    "name": "Perfect Hulking Miscreation"
   },
   {
     "metadata_id": "LeagueAzmeri/SpecialCorpses/BarrageDemonHigh_",
@@ -16676,6 +16484,10 @@
     "name": "Primeval Hunter"
   },
   {
+    "metadata_id": "Skeletons/SkeletonMeleeBlackAbyssBoneLanceChasmStandalone",
+    "name": "Primeval Hunter"
+  },
+  {
     "metadata_id": "Skeletons/SkeletonMeleeBlackAbyssBoneLanceDelve",
     "name": "Primeval Hunter"
   },
@@ -16705,6 +16517,10 @@
   },
   {
     "metadata_id": "Skeletons/SkeletonMeleeBlackAbyssChasm",
+    "name": "Primeval Watcher"
+  },
+  {
+    "metadata_id": "Skeletons/SkeletonMeleeBlackAbyssChasmStandalone",
     "name": "Primeval Watcher"
   },
   {
@@ -18008,10 +17824,6 @@
     "name": "Runic Skeleton"
   },
   {
-    "metadata_id": "LeagueHeist/Robot/RobotStormcallerGolemElite",
-    "name": "Rusty Crusher"
-  },
-  {
     "metadata_id": "SpiderlingEgg/RyslathaEgg",
     "name": "Ryslatha's Brood Egg"
   },
@@ -18280,6 +18092,10 @@
     "name": "Sarina Titucius"
   },
   {
+    "metadata_id": "LeagueKalguur/BanditArcher/BanditArcherBoss",
+    "name": "Sasan, the Bandit Lord"
+  },
+  {
     "metadata_id": "LeagueAzmeri/SpecialCorpses/CycloneDemonMid",
     "name": "Sawblade Horror"
   },
@@ -18397,6 +18213,10 @@
   },
   {
     "metadata_id": "Skeletons/Scarecrow/ScarecrowFarmerSkeletonMeleeSickleDualHellscape",
+    "name": "Scarecrow"
+  },
+  {
+    "metadata_id": "Skeletons/Scarecrow/ScarecrowFarmerSkeletonMeleeSickleExpedition",
     "name": "Scarecrow"
   },
   {
@@ -18592,11 +18412,23 @@
     "name": "Seismic Tower Mk I"
   },
   {
+    "metadata_id": "LeagueBlight/BlightTowerStunningRank1",
+    "name": "Seismic Tower Mk I"
+  },
+  {
     "metadata_id": "LeagueBlight/BlightTowerStunning2",
     "name": "Seismic Tower Mk II"
   },
   {
+    "metadata_id": "LeagueBlight/BlightTowerStunningRank2",
+    "name": "Seismic Tower Mk II"
+  },
+  {
     "metadata_id": "LeagueBlight/BlightTowerStunning3",
+    "name": "Seismic Tower Mk III"
+  },
+  {
+    "metadata_id": "LeagueBlight/BlightTowerStunningRank3_",
     "name": "Seismic Tower Mk III"
   },
   {
@@ -18622,26 +18454,6 @@
   {
     "metadata_id": "LeagueHeist/Science/ProjectCasterElite",
     "name": "Senior Heretech"
-  },
-  {
-    "metadata_id": "LeagueHeist/Science/ProjectCasterEliteGuardBench",
-    "name": "Senior Heretech"
-  },
-  {
-    "metadata_id": "LeagueHeist/Science/ProjectCasterEliteGuard_",
-    "name": "Senior Heretech"
-  },
-  {
-    "metadata_id": "LeagueHeist/Science/ScientistCasterElite",
-    "name": "Senior Necroscientist"
-  },
-  {
-    "metadata_id": "LeagueHeist/Science/ScientistCasterEliteGuard",
-    "name": "Senior Necroscientist"
-  },
-  {
-    "metadata_id": "LeagueHeist/Science/ScientistCasterEliteGuardBench",
-    "name": "Senior Necroscientist"
   },
   {
     "metadata_id": "Axis/AxisEliteSoldierDominatingBlow",
@@ -19152,11 +18964,23 @@
     "name": "Shock Nova Tower Mk I"
   },
   {
+    "metadata_id": "LeagueBlight/BlightTowerShockingRank1",
+    "name": "Shock Nova Tower Mk I"
+  },
+  {
     "metadata_id": "LeagueBlight/BlightTowerShocking2",
     "name": "Shock Nova Tower Mk II"
   },
   {
+    "metadata_id": "LeagueBlight/BlightTowerShockingRank2",
+    "name": "Shock Nova Tower Mk II"
+  },
+  {
     "metadata_id": "LeagueBlight/BlightTowerShocking3",
+    "name": "Shock Nova Tower Mk III"
+  },
+  {
+    "metadata_id": "LeagueBlight/BlightTowerShockingRank3",
     "name": "Shock Nova Tower Mk III"
   },
   {
@@ -19972,14 +19796,6 @@
     "name": "Spite"
   },
   {
-    "metadata_id": "LeagueHeist/Thug/ThugTrapper1",
-    "name": "Spiteful Smuggler"
-  },
-  {
-    "metadata_id": "LeagueHeist/Thug/ThugTrapper1Guard",
-    "name": "Spiteful Smuggler"
-  },
-  {
     "metadata_id": "Parasite/ParasiteSpitting",
     "name": "Spitting Parasite"
   },
@@ -20097,6 +19913,10 @@
   },
   {
     "metadata_id": "LeagueBlight/BlightTowerPetrification",
+    "name": "Stone Gaze Tower"
+  },
+  {
+    "metadata_id": "LeagueBlight/BlightTowerPetrificationRank4",
     "name": "Stone Gaze Tower"
   },
   {
@@ -21216,6 +21036,10 @@
     "name": "Temple Ward"
   },
   {
+    "metadata_id": "LeagueBlight/BlightTowerTemporalRank4",
+    "name": "Temporal Tower"
+  },
+  {
     "metadata_id": "LeagueBlight/BlightTowerTemporal__",
     "name": "Temporal Tower"
   },
@@ -21386,6 +21210,10 @@
   {
     "metadata_id": "GemMonster/IguanaBossPhoenixStandalone",
     "name": "The Basilisk"
+  },
+  {
+    "metadata_id": "LeagueKalguur/VerisiumGuardBoss/VerisiumGuardBoss",
+    "name": "The Black Knight"
   },
   {
     "metadata_id": "AtlasInvaders/BlackStarMonsters/BlackStarBoss",
@@ -22484,14 +22312,6 @@
     "name": "Tireless Sentry"
   },
   {
-    "metadata_id": "LeagueHeist/Robot/RobotMannequin",
-    "name": "Tireless Sentry"
-  },
-  {
-    "metadata_id": "LeagueHeist/Robot/RobotMannequinArgusSummon",
-    "name": "Tireless Sentry"
-  },
-  {
     "metadata_id": "MossMonster/MapMossMonsterBossOldFields",
     "name": "Titan of the Grove"
   },
@@ -23132,56 +22952,12 @@
     "name": "Tremorbones"
   },
   {
-    "metadata_id": "LeagueUltimatum/Ape/BloodMonkey",
-    "name": "Trial Ape"
-  },
-  {
-    "metadata_id": "LeagueUltimatum/Ape/BloodMonkeyEnrage",
-    "name": "Trial Ape"
-  },
-  {
-    "metadata_id": "LeagueUltimatum/Ape/BloodMonkeyEnrageRuin",
-    "name": "Trial Ape"
-  },
-  {
-    "metadata_id": "LeagueUltimatum/Ape/BloodMonkeySpectre",
-    "name": "Trial Ape"
-  },
-  {
     "metadata_id": "LeagueUltimatum/VaalOverseer/VaalOverseerMinion",
     "name": "Trial Champion"
   },
   {
     "metadata_id": "LeagueUltimatum/VaalOverseer/VaalOverseerMinionRuin",
     "name": "Trial Champion"
-  },
-  {
-    "metadata_id": "LeagueUltimatum/Ape/BloodChieftain",
-    "name": "Trial Chieftain"
-  },
-  {
-    "metadata_id": "LeagueUltimatum/Ape/BloodChieftainRuin",
-    "name": "Trial Chieftain"
-  },
-  {
-    "metadata_id": "LeagueUltimatum/Ape/BloodChieftainSpectre",
-    "name": "Trial Chieftain"
-  },
-  {
-    "metadata_id": "LeagueUltimatum/Ape/PaleApeEnrage",
-    "name": "Trial Horror"
-  },
-  {
-    "metadata_id": "LeagueUltimatum/Ape/PaleApeEnrageRuin",
-    "name": "Trial Horror"
-  },
-  {
-    "metadata_id": "LeagueUltimatum/Ape/PaleApeSpectre",
-    "name": "Trial Horror"
-  },
-  {
-    "metadata_id": "LeagueUltimatum/Ape/PaleApe_",
-    "name": "Trial Horror"
   },
   {
     "metadata_id": "LeagueUltimatum/Guard/GuardDaggersClone",
@@ -23358,14 +23134,6 @@
   {
     "metadata_id": "GemMonster/DexMissionIguanaBoss",
     "name": "Twisted Chimeral"
-  },
-  {
-    "metadata_id": "LeagueHeist/Thug/ThugTorch1Elite",
-    "name": "Twisted Firestarter"
-  },
-  {
-    "metadata_id": "LeagueHeist/Thug/ThugTorch1EliteGuard",
-    "name": "Twisted Firestarter"
   },
   {
     "metadata_id": "LeagueSynthesis/SynthesisSoulstealerGuardian3",
@@ -24860,6 +24628,10 @@
     "name": "Volatile"
   },
   {
+    "metadata_id": "LeagueKalguur/PetrifiedWood/PetrifiedWoodTendrilSentinelVolatile",
+    "name": "Volatile"
+  },
+  {
     "metadata_id": "Anomaly/AnomalyUniqueRing",
     "name": "Volatile Anomaly"
   },
@@ -24908,6 +24680,10 @@
     "name": "Volatile Core"
   },
   {
+    "metadata_id": "LeagueHeist/Boss/AdmiralDarnawWaveSmall",
+    "name": "Volatile Core"
+  },
+  {
     "metadata_id": "LeagueHeist/Boss/DanaiStormVolatile",
     "name": "Volatile Core"
   },
@@ -24921,6 +24697,10 @@
   },
   {
     "metadata_id": "LeagueHeist/Thug/ThugTrapperVolatile",
+    "name": "Volatile Core"
+  },
+  {
+    "metadata_id": "LeagueKalguur/Boss/KalguurAdmiralWave",
     "name": "Volatile Core"
   },
   {
@@ -25416,6 +25196,10 @@
     "name": "Wellwing"
   },
   {
+    "metadata_id": "MineBat/MineBatAbyssStandalone",
+    "name": "Wellwing"
+  },
+  {
     "metadata_id": "MineBat/MineBatAbyssLarge",
     "name": "Wellwing Matriarch"
   },
@@ -25498,10 +25282,6 @@
   {
     "metadata_id": "LeagueHarvest/Red/HarvestBeastT3Spectre",
     "name": "Wild Bristle Matron"
-  },
-  {
-    "metadata_id": "LeagueHarvest/Red/HarvestBeastT2",
-    "name": "Wild Bristlebeast"
   },
   {
     "metadata_id": "LeagueHarvest/Red/HarvestBeastT2",
@@ -25778,10 +25558,6 @@
   {
     "metadata_id": "LeagueDelve/BeyondEncounter/BeyondDemon2-2",
     "name": "Worshipper of Bameth"
-  },
-  {
-    "metadata_id": "Zombies/ZombieMummy",
-    "name": "Wrapped Nobleman"
   },
   {
     "metadata_id": "Zombies/ZombieMummy",

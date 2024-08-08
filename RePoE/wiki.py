@@ -91,9 +91,15 @@ def map_item(item):
 def fetch_unique_items():
     table = "items"
     fields = ["name", "class_id", "base_item", "is_drop_restricted", "tags", "drop_text",
-              "drop_enabled", "drop_monsters", "drop_areas", "explicit_stat_text", "acquisition_tags"]
+              "drop_enabled", "drop_monsters", "drop_areas", "explicit_stat_text", "acquisition_tags", "inventory_icon"]
     where = "rarity=%22Unique%22"
     data = request_data_from_wiki([table], fields, where, "")
+
+    for item in data:
+        item["icon_url"] = "https://www.poewiki.net/wiki/" + \
+            item["name"].replace(" ", "_") + \
+            "#/media/" + \
+            item.pop("inventory_icon").replace(" ", "_")
     save_file("unique_items", data)
 
 
